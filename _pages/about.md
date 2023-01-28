@@ -13,7 +13,6 @@ Hi, I'm Elio
 2. I am a third year computer science and information science student
 3. I've worked on several programming [projects](/portfolio)
 4. I make videos about interesting topics on [YouTube](https://www.youtube.com/c/ElioVerhoef)
-5. 
 
 
 Windows 11 Ultimate
