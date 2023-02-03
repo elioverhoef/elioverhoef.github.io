@@ -29,3 +29,5 @@ In [this booklet](https://www.amazon.com/Ideas-healthy-long-life-well-being-eboo
 For each topic, I discuss the science-based effects on the body, its relevance toward a healthy and long life, and some simple, practical steps to implement the idea into your life.
 
 Read the full booklet [here](https://www.amazon.com/Ideas-healthy-long-life-well-being-ebook/dp/B0BD26MLDP)
+
+![ideas_for_a_healthy_and_long_life](ideas_long_life.jpeg)
