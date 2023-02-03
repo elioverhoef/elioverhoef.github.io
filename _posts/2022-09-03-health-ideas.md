@@ -30,4 +30,4 @@ For each topic, I discuss the science-based effects on the body, its relevance t
 
 Read the full booklet [here](https://www.amazon.com/Ideas-healthy-long-life-well-being-ebook/dp/B0BD26MLDP)
 
-![ideas_for_a_healthy_and_long_life](/images/ideas_long_life.jpeg)
+![ideas_for_a_healthy_and_long_life](/images/ideas_long_life_cover.jpeg)
