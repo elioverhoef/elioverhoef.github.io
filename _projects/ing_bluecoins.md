@@ -12,7 +12,7 @@ Most of these tools, however, are paid.
 One free app that allows for your transactions to be imported is [Bluecoins](https://play.google.com/store/apps/details?id=com.rammigsoftware.bluecoins).
 This app, however, requires a standard format of a CSV file to allow it to import all of your transactions successfully.
 
-The ING converter for Bluecoins can convert the standard CSV format of all exported ING transactions, the the required format 
+The ING converter for Bluecoins can convert the standard CSV format of all exported ING transactions, to the required format 
 of the app. Instructions can be found on the GitHub page.
 
 [Download ING converter for Bluecoins here](https://github.com/elioverhoef/ING_Bluecoins)
