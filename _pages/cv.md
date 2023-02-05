@@ -11,13 +11,13 @@ redirect_from:
 
 
 Education
-======
+-----
 * Bilingual Gymnasium, Anna van Rijn College, 2014 - 2020 (Cum laude)
 * Bachelor Computer Science, Utrecht University, 2020 - 2023 (Cum laude)
 * Bachelor Information Science, Utrecht University, 2020 - 2023 (Cum laude)
 
 Skills
-======
+-----
 * Great communication
 * Leadership
 * Programming
@@ -28,7 +28,7 @@ Skills
 * MS Office Specialist
 
 Experience
-======
+-----
 * Teacher Assistant at Utrecht University
   * <b>2021 - 2023</b>
   * Assisting students in solving problems or tasks
@@ -42,8 +42,7 @@ Experience
   * Web design
   * Editing the Windows registry
 
-Projects
------
-See [projects page](/projects/)
+* [Other projects](/projects/)
   
+
 ## [Download CV](/files/CV.pdf)
