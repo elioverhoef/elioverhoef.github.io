@@ -41,6 +41,7 @@ Experience
   * Profound research in optimization
   * Web design
   * Editing the Windows registry
+
 Projects
 -----
 See [projects page](/projects/)
