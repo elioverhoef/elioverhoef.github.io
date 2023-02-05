@@ -15,6 +15,17 @@ Education
 * Bachelor Computer Science, Utrecht University, 2020 - 2023 (Cum laude)
 * Bachelor Information Science, Utrecht University, 2020 - 2023 (Cum laude)
 
+Skills
+======
+* Great communication
+* Leadership
+* Programming
+  * Python
+  * C#
+  * HTML/CSS
+* Video editing
+* MS Office Specialist
+
 Experience
 ======
 * Teacher Assistant at Utrecht University
@@ -32,15 +43,6 @@ Experience
 
 Projects
 -----
-See [projects page](https://elioverhoef.github.io/projects/)
+See [projects page](/projects/)
   
-Skills
-======
-* Great communication
-* Leadership
-* Programming
-  * Python
-  * C#
-  * HTML/CSS
-* Video editing
-* MS Office Specialist
+# [Download CV](/files/CV.pdf)
