@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -45,4 +45,4 @@ Projects
 -----
 See [projects page](/projects/)
   
-# [Download CV](/files/CV.pdf)
+## [Download CV](/files/CV.pdf)
