@@ -23,8 +23,6 @@ This propaganda, initiated in the United States, later spread through word of mo
 
 I have done, and will do some more research on what is actually going on.
 
-*Disclaimer* 
-
 Two things before we get started.
 
 1. I might be wrong
