@@ -32,10 +32,9 @@ I have done, and will do some more research on what is actually going on.
 
 Two things before we get started.
 
-1. I am not a doctor
+1. I might be wrong
 2. There are contradicting studies out there since studies can be performed incorrectly, or with a small sample size.
-
-      What I think I know now might not be the truth, as biology is complicated and researchers can have biases and hidden agendas.
+  What I think I know now might not be the truth, as biology is complicated and researchers can have biases and hidden agendas.
 
 # 1. People with a fat-based diet live **longer**
 
@@ -50,12 +49,11 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 # 2. What about saturated fat? Is that healthy?
 
 - According to the American Heart Association *****today*****, it is NOT, since it increases LDL “bad” cholesterol. [https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats#:~:text=AHA Recommendation,of saturated fat per day](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats#:~:text=AHA%20Recommendation,of%20saturated%20fat%20per%20day). [3]
-    - [Screenshots in **Materiaal**]
 - But is LDL cholesterol actually bad?
 - A study of 136,000 patients admitted to the hospital for a coronary artery event found that nearly 50% of them had a low **LDL cholesterol** level, despite the common belief that high LDL cholesterol is a major risk factor for heart disease.
     - https://www.sciencedirect.com/science/article/pii/S2211335519300592?via%3Dihub [4]
-- [x]  **A recent meta analysis, which is basically a study of lots of different studies, found that higher LDL cholesterol was associated with greater longevity & thus lower mortality! The analysis was performed on 19 studies, with a total patient count of 6 million.**
-    - [ ]  https://www.researchgate.net/publication/347488140_The_LDL_Paradox_Higher_LDL-Cholesterol_is_Associated_with_Greater_Longevity_of_Creative_Commons_Attribution_40_International_License [5]
+-   **A recent meta analysis, which is basically a study of lots of different studies, found that higher LDL cholesterol was associated with greater longevity & thus lower mortality! The analysis was performed on 19 studies, with a total patient count of 6 million.**
+    - https://www.researchgate.net/publication/347488140_The_LDL_Paradox_Higher_LDL-Cholesterol_is_Associated_with_Greater_Longevity_of_Creative_Commons_Attribution_40_International_License [5]
 
 # 3. What about trans fats?
 
@@ -78,14 +76,13 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 # 5. What about other fat types?
 
 - Fat can be split up into three categories: saturated fats, monounsaturated fats, and polyunsaturated fats
-- HIER GEBLEVEN MET OPNAME
 - Since we just discussed saturated fats, let’s look at the healthiness of the other 2 fat types
     - **Monounsaturated fats**
         - Monounsaturated fats are said to be healthy overall,
             - improving insulin sensitivity, [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2628682/](https://www.ncbi.nlm.nih.gov/pubmed/11317662)] [8]
             - lowering blood pressure [https://pubmed.ncbi.nlm.nih.gov/16287956/] [9],
             - and reducing cancer risk, specifically by taking olive oil [https://pubmed.ncbi.nlm.nih.gov/7927867/] [10].
-    - ****************************************Polyunsaturated fats****************************************
+    - **Polyunsaturated fats**
         - Polyunsaturated fats are generally considered very healthy too, especially omega-3 fatty acids.
         - Although omega-6 fats are essential as well, it’s recommended to not take them in excessive amounts, since that is found to cause inflammation in a 2018.
             - Innes, J. K., & Calder, P. C. (2018). Omega-6 fatty acids and inflammation. *Prostaglandins, Leukotrienes and Essential Fatty Acids*, *132*, 41-48. [11]
