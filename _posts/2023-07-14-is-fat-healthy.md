@@ -16,13 +16,9 @@ tags:
   - sugar
 ---
 
-There’s a lot of low fat products out there, like low-fat yoghurt, or low-fat meat. People also like to limit their oil intake.
+## Why do people consider fat to be a bad thing?
 
-Why do people consider fat to be a bad thing?
-
-In the 1960’s, sugar companies paid to spread the message that fat was to blame for people’s health problems, while promoting sugar
-
-https://www.npr.org/sections/thetwo-way/2016/09/13/493739074/50-years-ago-sugar-industry-quietly-paid-scientists-to-point-blame-at-fat [1]
+In the 1960’s, sugar companies paid to spread the message that fat was to blame for people’s health problems, while promoting sugar [https://www.npr.org/sections/thetwo-way/2016/09/13/493739074/50-years-ago-sugar-industry-quietly-paid-scientists-to-point-blame-at-fat]([1])
 
 This propaganda, initiated in the United States, later spread through word of mouth, still causing discussions today!
 
