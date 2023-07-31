@@ -25,6 +25,7 @@ Skills
   * C#
   * HTML/CSS
 * Video editing
+* Power BI
 * MS Office Specialist
 
 Experience
@@ -37,10 +38,10 @@ Experience
 * Creating [Windows 11 Ultimate](https://w11ultimate.com)
   * <b>2021 - now</b>
   * Windows installation editing
-  * Creating .bat scripts
-  * Profound research in optimization
   * Web design
+  * Research in optimization
   * Editing the Windows registry
+  * Scripting
 
 * [Other projects](/projects/)
   
