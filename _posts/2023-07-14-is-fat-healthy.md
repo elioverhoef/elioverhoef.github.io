@@ -61,9 +61,8 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 
 - Lets dive deeper into the dangers of vegetable oils - [Canola, sunflower, corn oil]
 - Polyunsaturated fatty acids in vegetable oils can form toxic byproducts like aldehydes when exposed to heat or oxygen, leading to heart disease.
-- There’s a very long study, where a large group of people older than 60 were given either animal fats or vegetable oils.
-    - People eating vegetable oils died significantly more than the people eating the animal fats. This happened despite the people in the animal fat  group having twice as many heavy smokers.
-    - [[7]](https://pubmed.ncbi.nlm.nih.gov/4176868/)
+- There’s a very long study, where a large group of people older than 60 were given either animal fats or vegetable oils. [[7]](https://pubmed.ncbi.nlm.nih.gov/4176868/)
+    - People eating vegetable oils died significantly more than the people eating the animal fats. This happened despite the people in the animal fat  group having twice as many heavy smokers. 
 
 # 5. What about other fat types?
 
