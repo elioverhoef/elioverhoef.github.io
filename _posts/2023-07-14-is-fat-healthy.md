@@ -1,6 +1,6 @@
 ---
 title: 'Is fat healthy? What I’ve learned.'
-date: 2022-08-06
+date: 2023-07-14
 permalink: /posts/2023/07/fat/
 tags:
   - fat
