@@ -38,7 +38,7 @@ Let’s start with the broad picture.
 A longitudal study from 2017 found that high carbohydrate intake was associated with a higher risk of mortality, while high fat intake was associated with a lower risk of mortality. Participants with the highest carbohydrate intake (77% of calories) were 28% more likely to have died, while those with the highest fat intake (35% of calories) were 23% less likely to have died. Higher saturated fat intake was also associated with a lower riswk of strokes.
 
 - Dehghan, M., Mente, A., Zhang, X., Swaminathan, S., Li, W., Mohan, V., ... & Garcia, R. (2017). Associations of fats and carbohydrate intake with cardiovascular disease and mortality in 18 countries from five continents (PURE): a prospective cohort study. *The Lancet*, *390*(10107), 2050-2062. [2]
-- A study from the Journal of Alzheimer found that people whose diets were highest in fat — compared to the lowest — were 42 percent less likely to face cognitive impairment [https://www.j-alz.com/content/eating-lots-carbs-sugar-may-raise-risk-cognitive-impairment-mayo-clinic-study-finds].
+- A study from the Journal of Alzheimer found that [people whose diets were highest in fat — compared to the lowest — were 42 percent less likely to face cognitive impairment](https://www.j-alz.com/content/eating-lots-carbs-sugar-may-raise-risk-cognitive-impairment-mayo-clinic-study-finds).
 - I have been following eating relatively high fat for my time in Taiwan, and feel great.
 
 # 2. What about saturated fat? Is that healthy?
