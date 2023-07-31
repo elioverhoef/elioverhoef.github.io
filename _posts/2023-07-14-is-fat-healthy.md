@@ -87,7 +87,6 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 
 # 6. Takeaways
 
-If you can reduce vegetable oils like canola oil, sunflower oil, and rapeseed oil, and at the same time increase your usage of olive oil (preferably extra virgin), or simply butter or coconut oil, you are on a great trajectory to improve your health according to the current science i’ve found regarding fats.
-- [[13]](https://pubmed.ncbi.nlm.nih.gov/29511019/), [[14]](https://www.ncbi.nlm.nih.gov/pubmed/24886626)
+If you can reduce vegetable oils like canola oil, sunflower oil, and rapeseed oil, and at the same time increase your usage of olive oil (preferably extra virgin), or simply butter or coconut oil, you are on a great trajectory to improve your health according to the current science i’ve found regarding fats. [[13]](https://pubmed.ncbi.nlm.nih.gov/29511019/), [[14]](https://www.ncbi.nlm.nih.gov/pubmed/24886626)
 
 If you think I missed something or made a mistake in my discussion of fats, please let me know and I will make sure to look into it!
