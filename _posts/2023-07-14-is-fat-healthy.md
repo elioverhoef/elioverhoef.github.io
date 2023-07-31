@@ -18,7 +18,7 @@ tags:
 
 ## Why do people consider fat to be a bad thing?
 
-In the 1960’s, sugar companies paid to spread the message that fat was to blame for people’s health problems, while promoting sugar [https://www.npr.org/sections/thetwo-way/2016/09/13/493739074/50-years-ago-sugar-industry-quietly-paid-scientists-to-point-blame-at-fat]([1])
+In the 1960’s, sugar companies paid to spread the message that fat was to blame for people’s health problems, while promoting sugar [[1]](https://www.npr.org/sections/thetwo-way/2016/09/13/493739074/50-years-ago-sugar-industry-quietly-paid-scientists-to-point-blame-at-fat)
 
 This propaganda, initiated in the United States, later spread through word of mouth, still causing discussions today!
 
@@ -44,12 +44,10 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 
 # 2. What about saturated fat? Is that healthy?
 
-- According to the American Heart Association *****today*****, it is NOT, since it increases LDL “bad” cholesterol. [https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats#:~:text=AHA Recommendation,of saturated fat per day](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats#:~:text=AHA%20Recommendation,of%20saturated%20fat%20per%20day). [3]
+- According to the American Heart Association **today**, it is NOT, since it increases LDL “bad” cholesterol. [[3]](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats#:~:text=AHA%20Recommendation,of%20saturated%20fat%20per%20day).
 - But is LDL cholesterol actually bad?
-- A study of 136,000 patients admitted to the hospital for a coronary artery event found that nearly 50% of them had a low **LDL cholesterol** level, despite the common belief that high LDL cholesterol is a major risk factor for heart disease.
-    - https://www.sciencedirect.com/science/article/pii/S2211335519300592?via%3Dihub [4]
--   **A recent meta analysis, which is basically a study of lots of different studies, found that higher LDL cholesterol was associated with greater longevity & thus lower mortality! The analysis was performed on 19 studies, with a total patient count of 6 million.**
-    - https://www.researchgate.net/publication/347488140_The_LDL_Paradox_Higher_LDL-Cholesterol_is_Associated_with_Greater_Longevity_of_Creative_Commons_Attribution_40_International_License [5]
+- A study of 136,000 patients admitted to the hospital for a coronary artery event found that nearly 50% of them had a low **LDL cholesterol** level, despite the common belief that high LDL cholesterol is a major risk factor for heart disease. [[4]](https://www.sciencedirect.com/science/article/pii/S2211335519300592?via%3Dihub)
+-   **A recent meta analysis, which is basically a study of lots of different studies, found that higher LDL cholesterol was associated with greater longevity & thus lower mortality! The analysis was performed on 19 studies, with a total patient count of 6 million.** [[5]](https://www.researchgate.net/publication/347488140_The_LDL_Paradox_Higher_LDL-Cholesterol_is_Associated_with_Greater_Longevity_of_Creative_Commons_Attribution_40_International_License)
 
 # 3. What about trans fats?
 
@@ -58,7 +56,7 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
     - Artificial trans fats are made by adding hydrogen to vegetable oils, and these can be really bad for your health, according to the research I could find at the time of this video.
         - Why is hydrogen added to these vegetable oils? Simply to keep them solid at room temperature in order to increase their shelf life.
 - Studies indicate that artificial trans fats increase inflammation, especially in people with excess weight or obesity.****
-    - Oteng, A. B., & Kersten, S. (2020). Mechanisms of action of trans fatty acids. *Advances in Nutrition*, *11*(3), 697-708. [6] https://www.ahajournals.org/doi/abs/10.1161/01.CIR.40.1S2.II-1
+    - [[6]](https://www.ahajournals.org/doi/abs/10.1161/01.CIR.40.1S2.II-1)
 
 # 4. Vegetable oils
 
@@ -66,8 +64,7 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 - Polyunsaturated fatty acids in vegetable oils can form toxic byproducts like aldehydes when exposed to heat or oxygen, leading to heart disease.
 - There’s a very long study, where a large group of people older than 60 were given either animal fats or vegetable oils.
     - People eating vegetable oils died significantly more than the people eating the animal fats. This happened despite the people in the animal fat  group having twice as many heavy smokers.
-    - Dayton, S., Pearce, M. L., Hashimoto, S., Dixon, W. J., & Tomiyasu, U. (1969). A controlled clinical trial of a diet high in unsaturated fat in preventing complications of atherosclerosis. *Circulation*, *40*(1s2), II-1. [7]
-        - https://pubmed.ncbi.nlm.nih.gov/4176868/
+    - [[7]](https://pubmed.ncbi.nlm.nih.gov/4176868/)
 
 # 5. What about other fat types?
 
@@ -75,9 +72,9 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 - Since we just discussed saturated fats, let’s look at the healthiness of the other 2 fat types
     - **Monounsaturated fats**
         - Monounsaturated fats are said to be healthy overall,
-            - improving insulin sensitivity, [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2628682/](https://www.ncbi.nlm.nih.gov/pubmed/11317662)] [8]
-            - lowering blood pressure [https://pubmed.ncbi.nlm.nih.gov/16287956/] [9],
-            - and reducing cancer risk, specifically by taking olive oil [https://pubmed.ncbi.nlm.nih.gov/7927867/] [10].
+            - improving insulin sensitivity, [[8]](https://pubmed.ncbi.nlm.nih.gov/11317662/)
+            - lowering blood pressure [[9]](https://pubmed.ncbi.nlm.nih.gov/16287956/),
+            - and reducing cancer risk, specifically by taking olive oil [[10]](https://pubmed.ncbi.nlm.nih.gov/7927867/).
     - **Polyunsaturated fats**
         - Polyunsaturated fats are generally considered very healthy too, especially omega-3 fatty acids.
         - Although omega-6 fats are essential as well, it’s recommended to not take them in excessive amounts, since that is found to cause inflammation in a 2018.
@@ -88,14 +85,11 @@ A longitudal study from 2017 found that high carbohydrate intake was associated 
 - Meat contains a lot of vitamin b3, vitamin b12, zinc, and it’s a great source of protein as well.
 - Eggs are also amazing, containing an insane amount of nutrients, like choline, selenium, and vitamins.
     - Fun fact: Almost all nutrients are stored in the yolk, while the egg white is mostly protein.
-- Fish - You probably already know fish is very healthy: Containing a lot of omega-3 fatty acids which are very healthy for the brain, and it’s generally been shown to low heart disease risk
-    - https://pubmed.ncbi.nlm.nih.gov/22682084/ [12]
+- Fish - You probably already know fish is very healthy: Containing a lot of omega-3 fatty acids which are very healthy for the brain, and it’s generally been shown to low heart disease risk [[12]](https://pubmed.ncbi.nlm.nih.gov/22682084/)
 
 # 6. Takeaways
 
 If you can reduce vegetable oils like canola oil, sunflower oil, and rapeseed oil, and at the same time increase your usage of olive oil (preferably extra virgin), or simply butter or coconut oil, you are on a great trajectory to improve your health according to the current science i’ve found regarding fats.
-
-- https://pubmed.ncbi.nlm.nih.gov/29511019/ [13]
-- https://www.ncbi.nlm.nih.gov/pubmed/24886626 [14]
+- [[13]](https://pubmed.ncbi.nlm.nih.gov/29511019/), [[14]](https://www.ncbi.nlm.nih.gov/pubmed/24886626)
 
 If you think I missed something or made a mistake in my discussion of fats, please let me know and I will make sure to look into it!
