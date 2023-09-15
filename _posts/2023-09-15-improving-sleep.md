@@ -15,7 +15,7 @@ tags:
   - supplements
 ---
 
-# Introduction
+## Introduction
 
 Hi, I’m Elio, and I will try to help you sleep better.
 
@@ -27,7 +27,7 @@ It’s quite a very large list, so it would be unreasonable to try everything at
 
 It might be better to identify one of these factors that could be having the greatest impact on your sleep, and then focus on implementing just that one thing before implementing another one.
 
-# Basic tips for improving sleep
+## Basic tips for improving sleep
 
 1. View sunlight directly after wakeup
     1. Sets the circadian clock, such that you become sleepy in the late afternoon and evening!
@@ -60,7 +60,7 @@ It might be better to identify one of these factors that could be having the gre
     1. Sounds can keep you up, or wake you up
     2. If you live in a noisy environment, consider using white noise to drown out the background noise, as well as earplugs. 
 
-# Advanced improvements
+## Advanced improvements
 
 1. Get a temperature controlled mattress - quite expensive [11]
 2. Setup a wake-up light
@@ -74,7 +74,7 @@ It might be better to identify one of these factors that could be having the gre
     2. Apigenin is actually found in high dosages in chamomile tea, causing its relaxing effects
     3. Once again, I got these supplement recommendations from Andrew Huberman.
 
-# What I’ve done
+## What I’ve done
 
 1. As you might know, I don’t drink alcohol
 2. Wakeup light & No alarm
@@ -94,7 +94,7 @@ It might be better to identify one of these factors that could be having the gre
 13. Occasionally using a fan when it’s hot - these days it’s 31 or 32 degrees during the day - in September in the Netherlands!
 14. Open window
 
-# References
+## References
 
 1. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2266277/
 2. [https://pubmed.ncbi.nlm.nih.gov/22440089/](https://www.sciencedirect.com/science/article/pii/S0140197112001832?casa_token=w8K9s8Vaqf4AAAAA:YDzS8ho4g6VM-Wuyt7p9cightrX-0jUIbjc6kIUuELCr3bn5rpGaefMB4RrvA7gOnJhU9Uu-z3Q)
