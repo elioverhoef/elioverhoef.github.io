@@ -1,7 +1,7 @@
 ---
 title: '16 Science-Based Tips for Better Sleep'
-date: 2023-07-14
-permalink: /posts/2023/07/fat/
+date: 2023-09-15
+permalink: /posts/2023/09/sleep/
 tags:
   - sleep
   - caffeine
