@@ -1,6 +1,6 @@
 ---
 title: "Daily Boost: How the 7-Minute Workout Energizes My Morning"
-date: 2024-02-22
+date: 2023-08-06
 permalink: /posts/2023/08/7-minute-workout/
 tags:
   - Morning Routine
