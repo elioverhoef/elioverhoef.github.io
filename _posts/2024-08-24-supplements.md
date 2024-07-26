@@ -58,24 +58,23 @@ Let's get into the supplements!
 7. **Ashwagandha KSM-66**:
 
    - **Dosage**: 1.5g of extract
-   - **Benefits**: Stress reduction, cognitive enhancement.
+   - **Benefits**: Stress buffering, cognitive enhancement.
 
 8. **NMN (Nicotinamide mononucleotide)**:
 
    - **Dosage**: 500mg
    - **Benefits**: Cellular health, potential anti-aging effects.
-   - **Considerations**: Not needed without age-related concerns.
+   - **Considerations**: Not needed without age-related concerns. See more info on https://elioverhoef.com/posts/2024/04/nmn/
 
 9. **Creatine**:
 
    - **Dosage**: 5g
-   - **Benefits**: Exercise performance, muscle growth.
-   - **Considerations**: Not needed without intense physical activity.
+   - **Benefits**: Exercise performance, muscle growth, and cognitive performance.
+   - **Considerations**: Very safe.
 
 10. **NAC (N-acetylcysteine)**:
     - **Dosage**: 700mg
     - **Benefits**: Antioxidant, liver health, mood support.
-    - **Considerations**: Not needed without specific concerns.
 
 ## Sleep supplements
 
@@ -83,18 +82,17 @@ Let's get into the supplements!
 
    - **Dosage**: 50mg (present in chamomile tea)
    - **Benefits**: Antioxidant, brain health, anxiety reduction.
-   - **Considerations**: Not needed if you consume chamomile tea.
+   - **Considerations**: Not needed if you consume chamomile tea in the evening.
 
 2. **Magnesium L-threonate**:
 
    - **Dosage**: 400mg
-   - **Benefits**: Brain health, memory improvement.
-   - **Considerations**: Not needed without cognitive concerns.
+   - **Benefits**: Brain health, memory improvement, deep sleep.
 
 3. **L-theanine**:
    - **Dosage**: 200mg
    - **Benefits**: Relaxation, focus, anxiety reduction.
-   - **Considerations**: Not needed without stress or anxiety.
+   - **Considerations**: Can cause lucid or intense dreams.
 
 ## Additional Supplement
 
@@ -103,15 +101,16 @@ Let's get into the supplements!
     - **Benefits**:
       - May improve cognitive symptoms in older adults with mild to moderate dementia
       - Potentially enhances athletic performance, particularly in power output and vertical jump power
-      - Could improve the effectiveness of treatments for certain neurological conditions
+      - Increases acetylcholine in the brain for increased cognitive performance and focus
     - **Considerations**:
       - Generally well-tolerated, but recent studies suggest a potential link to increased cardiovascular risk, especially in those already at high risk for CVD
-      - More research is needed to confirm long-term effects and safety
-      - If you have a history of cardiovascular issues, consult with a healthcare provider before use
+      - More research is needed to confirm long-term effects and safety, also regarding strokes
+      - Not needed if you consume 5+ eggs daily
 
 ## Supplement Timing
 
-I take everything in the morning except for my sleep supplements. I also take Pure Brainpower, Alpha-GPC (300mg or 600mg, not always, for focus), and 1 of the 3 pills of Omega-3 in the afternoon (other 2 in morning).
+I take everything in the morning except for my sleep supplements.
+In the afteroon, I take Pure Brainpower, Alpha-GPC (300mg or 600mg, not always, for focus), and 1 of the 3 pills of Omega-3 (other 2 in the morning).
 
 ## Conclusion
 
