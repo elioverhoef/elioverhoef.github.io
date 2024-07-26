@@ -53,7 +53,7 @@ Let's get into the supplements!
 6. **Boron**:
 
    - **Dosage**: 3mg
-   - **Benefits**: Bone health, testosterone regulation.
+   - **Benefits**: Bone health, SHGB regulation - when eating many nuts like me ;).
 
 7. **Ashwagandha KSM-66**:
 
