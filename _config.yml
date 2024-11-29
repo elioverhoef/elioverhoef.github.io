@@ -13,7 +13,7 @@ name                     : &name "Elio Verhoef"
 description              : &description "Programmer / Runner"
 url                      : https://elioverhoef.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "elioverhoef.github.io"
+repository               : "elioverhoef/elioverhoef.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
