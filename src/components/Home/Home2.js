@@ -4,7 +4,7 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
+  AiFillYoutube,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -31,7 +31,16 @@ function Home2() {
               <br />
               <br />
               I've worked on several programming projects and make interesting videos about health on{" "}
-              <b className="purple">YouTube</b>
+              <b className="purple">
+                <a
+                  href="https://www.youtube.com/c/ElioVerhoef"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="purple"
+                >
+                  YouTube
+                </a>
+              </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -59,7 +68,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/elioverhoef/"
+                  href="https://www.linkedin.com/in/elio-verhoef-699462291/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -74,7 +83,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <AiFillYoutube />
                 </a>
               </li>
             </ul>
