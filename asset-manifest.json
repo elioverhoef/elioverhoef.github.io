@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.55fb1383.css",
-    "main.js": "/static/js/main.5155f482.js",
-    "static/js/422.2cf90b72.chunk.js": "/static/js/422.2cf90b72.chunk.js",
-    "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
-    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/logo.png": "/static/media/logo.896e010310aad68812ca.png",
-    "static/media/avatar.svg": "/static/media/avatar.89b9851b3d03a02f3750b585dd1cd752.svg",
-    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
-    "index.html": "/index.html",
-    "main.55fb1383.css.map": "/static/css/main.55fb1383.css.map",
-    "main.5155f482.js.map": "/static/js/main.5155f482.js.map",
-    "422.2cf90b72.chunk.js.map": "/static/js/422.2cf90b72.chunk.js.map"
+    "main.css": "https://elioverhoef.com/static/css/main.e88c2902.css",
+    "main.js": "https://elioverhoef.com/static/js/main.b0234519.js",
+    "static/js/422.2cf90b72.chunk.js": "https://elioverhoef.com/static/js/422.2cf90b72.chunk.js",
+    "static/media/home-main.svg": "https://elioverhoef.com/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "https://elioverhoef.com/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/home-bg.jpg": "https://elioverhoef.com/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/logo.png": "https://elioverhoef.com/static/media/logo.896e010310aad68812ca.png",
+    "static/media/avatar.svg": "https://elioverhoef.com/static/media/avatar.89b9851b3d03a02f3750b585dd1cd752.svg",
+    "static/media/pre.svg": "https://elioverhoef.com/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "https://elioverhoef.com/index.html",
+    "main.e88c2902.css.map": "https://elioverhoef.com/static/css/main.e88c2902.css.map",
+    "main.b0234519.js.map": "https://elioverhoef.com/static/js/main.b0234519.js.map",
+    "422.2cf90b72.chunk.js.map": "https://elioverhoef.com/static/js/422.2cf90b72.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55fb1383.css",
-    "static/js/main.5155f482.js"
+    "static/css/main.e88c2902.css",
+    "static/js/main.b0234519.js"
   ]
 }
