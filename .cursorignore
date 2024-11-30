@@ -1,0 +1,9 @@
+.gitignore
+.env
+.cursorignore
+Images/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
