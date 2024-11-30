@@ -40,12 +40,7 @@ Think of AI prompting like learning a new language. Just as fluency in Spanish o
 
 Just as a master chef follows a proven recipe process (mise en place → prep → cook → plate), effective AI communication follows its own tested framework:
 
-| Step | Chef's Analogy | AI Framework | Purpose |
-|------|----------------|--------------|----------|
-| 1️⃣ Analysis | Checking ingredients | `<analysis>` | Understand what we're working with |
-| 2️⃣ Questions | Recipe clarification | `<questions>` | Clear up any ambiguities |
-| 3️⃣ Thinking | Planning the dish | `<thinking>` | Strategic approach |
-| 4️⃣ Execution | Cooking | `<execution>` | Implementation |
+![4-Step AI Prompting Framework](https://cdn-images-1.medium.com/v2/resize:fit:800/1*hRm9ynmiZ0pFpBe9jb9krQ.png)
 
 ### Real-World Example: Writing a Python Script
 Let's see how this framework transforms a simple request into exceptional output:
