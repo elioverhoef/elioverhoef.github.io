@@ -2,51 +2,45 @@ import React, { useState, useEffect, useMemo } from "react";
 import { Container, Badge } from "react-bootstrap";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, Calendar } from "lucide-react";
 import Particle from "../Particle";
-import { loadBlogPosts } from "../../utils/blogUtils";
 import logging from "../../utils/logging";
 
-function BlogPost() {
+function MarkdownContent({ type, loadContent }) {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const [post, setPost] = useState(null);
+  const [content, setContent] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const logger = useMemo(() => logging.getLogger('BlogPost'), []);
+  const logger = useMemo(() => logging.getLogger('MarkdownContent'), []);
 
   useEffect(() => {
     let mounted = true;
 
-    const loadPost = async () => {
+    async function fetchContent() {
       try {
-        const posts = await loadBlogPosts();
-        const foundPost = posts.find(p => p.slug === slug);
-        
-        if (!foundPost && mounted) {
-          throw new Error('Blog post not found');
-        }
-        
+        logger.info(`Fetching ${type} content for: ${slug}`);
+        const data = await loadContent(slug);
         if (mounted) {
-          setPost(foundPost);
+          setContent(data);
           setLoading(false);
         }
       } catch (err) {
-        logger.error("Error loading blog post:", err);
+        logger.error(`Failed to fetch ${type} content:`, err);
         if (mounted) {
-          setError('Blog post not found');
+          setError(`Failed to load ${type}. Please try again later.`);
           setLoading(false);
-          setTimeout(() => navigate('/blog'), 2000);
+          setTimeout(() => navigate(`/${type}`), 2000);
         }
       }
-    };
+    }
 
-    loadPost();
+    fetchContent();
 
     return () => {
       mounted = false;
     };
-  }, [slug, navigate, logger]);
+  }, [slug, type, loadContent, navigate, logger]);
 
   if (loading) {
     return (
@@ -57,21 +51,21 @@ function BlogPost() {
             <div className="spinner-border text-primary" role="status">
               <span className="visually-hidden">Loading...</span>
             </div>
-            <p className="mt-3">Loading blog post...</p>
+            <p className="mt-3">Loading {type}...</p>
           </div>
         </Container>
       </Container>
     );
   }
 
-  if (error || !post) {
+  if (error || !content) {
     return (
       <Container fluid className="project-section">
         <Particle />
         <Container>
           <div className="error-message">
             <div className="alert alert-danger" role="alert">
-              {error || 'Post not found'}. Redirecting to blog list...
+              {error || `${type} not found`}. Redirecting...
             </div>
           </div>
         </Container>
@@ -83,38 +77,35 @@ function BlogPost() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <article className="blog-post">
-          <Link to="/blog" className="back-link">
+        <article className="markdown-content">
+          <Link to={`/${type}`} className="back-link">
             <ArrowLeft className="w-5 h-5 mr-2" />
-            Back to Blog
+            Back to {type.charAt(0).toUpperCase() + type.slice(1)}s
           </Link>
           
-          <header className="blog-header">
+          <header className="content-header">
             <div className="tag-container">
-              {post.tags?.map(tag => (
-                <Badge key={tag} className="blog-tag">
+              {content.tags?.map(tag => (
+                <Badge key={tag} className="content-tag">
                   {tag}
                 </Badge>
               ))}
             </div>
             
-            <h1 className="blog-title">{post.title}</h1>
+            <h1 className="content-title">{content.title}</h1>
             
-            <div className="blog-meta">
-              <span className="date">
-                <Calendar className="w-5 h-5 mr-2" />
-                {new Date(post.date).toLocaleDateString()}
-              </span>
-              <span className="separator">·</span>
-              <span className="read-time">
-                <Clock className="w-5 h-5 mr-2" />
-                {post.readTime}
-              </span>
-            </div>
+            {content.date && (
+              <div className="content-meta">
+                <span className="date">
+                  <Calendar className="w-5 h-5 mr-2" />
+                  {new Date(content.date).toLocaleDateString()}
+                </span>
+              </div>
+            )}
           </header>
           
           <div className="markdown-content prose prose-invert prose-purple">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+            <ReactMarkdown>{content.content}</ReactMarkdown>
           </div>
         </article>
       </Container>
@@ -122,4 +113,4 @@ function BlogPost() {
   );
 }
 
-export default BlogPost;
+export default MarkdownContent;

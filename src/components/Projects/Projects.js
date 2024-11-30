@@ -1,13 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import mindmappr from "../../Assets/Projects/mindmappr.png";
-import pomodoro from "../../Assets/Projects/pomodoro.png";
-import projectcodr from "../../Assets/Projects/projectcodr.png";
-import yt2blog from "../../Assets/Projects/yt2blog.png";
+import { loadContent } from "../../utils/projectUtils";
+import { Link } from "react-router-dom";
 
 function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const projectData = await loadContent('projects');
+        setProjects(projectData);
+        setLoading(false);
+      } catch (err) {
+        setError("Failed to load projects");
+        setLoading(false);
+      }
+    }
+
+    fetchProjects();
+  }, []);
+
+  if (loading) {
+    return (
+      <Container fluid className="project-section">
+        <Particle />
+        <Container>
+          <div className="loading-spinner">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p className="mt-3">Loading projects...</p>
+          </div>
+        </Container>
+      </Container>
+    );
+  }
+
+  if (error) {
+    return (
+      <Container fluid className="project-section">
+        <Particle />
+        <Container>
+          <div className="error-message">
+            <div className="alert alert-danger" role="alert">
+              {error}
+            </div>
+          </div>
+        </Container>
+      </Container>
+    );
+  }
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -19,59 +67,20 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={mindmappr}
-              isBlog={false}
-              title="Mindmappr AI"
-              description="Creating automatic mindmaps to inspire creativity."
-              ghLink="http://mindmappr.ai/"
-              demoLink="http://mindmappr.ai/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={projectcodr}
-              isBlog={false}
-              title="ProjectCodr AI"
-              description="Create entire software projects automatically with AI! Make your programming project in any language, without writing a single line of code."
-              ghLink="http://projectcodr.ai/"
-              demoLink="http://projectcodr.ai/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={yt2blog}
-              isBlog={false}
-              title="YouTube to Blog (YT2Blog.com)"
-              description="YT2Blog AI converts your YouTube videos into written blogs, matching your preferred writing style. It uses video transcripts and an optional example blog for guidance."
-              ghLink="https://www.yt2blog.com/"
-              demoLink="https://www.yt2blog.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={pomodoro}
-              isBlog={false}
-              title="Pomodoro Timer"
-              description="Simple pomodoro timer for 50 minutes work sessions. The app has an option for binaural beats during the timer."
-              ghLink="https://github.com/elioverhoef/pomodoro"
-              demoLink="https://github.com/elioverhoef/pomodoro"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              isBlog={false}
-              title="Windows 11 Ultimate"
-              description="Windows 11 Ultimate is a customized Windows installation made to maximize performance, protect your privacy, and deliver a smooth experience."
-              ghLink="http://w11ultimate.com/"
-              demoLink="http://w11ultimate.com/"
-            />
-          </Col>
+          {projects.map((project, index) => (
+            <Col md={4} className="project-card" key={index}>
+              <Link to={`/project/${project.slug}`} style={{ textDecoration: 'none' }}>
+                <ProjectCard
+                  imgPath={project.image}
+                  isBlog={false}
+                  title={project.title}
+                  description={project.excerpt}
+                  ghLink={project.ghLink}
+                  demoLink={project.demoLink}
+                />
+              </Link>
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>

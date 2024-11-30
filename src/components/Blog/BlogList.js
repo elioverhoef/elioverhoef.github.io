@@ -1,39 +1,91 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import { Link } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
+import { loadBlogPosts } from "../../utils/blogUtils";
+import logging from "../../utils/logging";
+import { ArrowRight } from "lucide-react";
 
 function BlogList() {
-  const posts = [
-    {
-      title: "The Ultimate AI Coding Prompt: Revolutionizing Software Development with Claude and ChatGPT",
-      date: "2024-08-29",
-      readTime: "16 minute read",
-      slug: "ai-coding-prompt",
-      excerpt: "In the ever-evolving landscape of software development, artificial intelligence has emerged as a game-changing force..."
-    },
-    {
-      title: "Mastering Claude AI: Advanced Tips and Tricks for Effortless Coding and Beyond",
-      date: "2024-08-20",
-      readTime: "17 minute read",
-      slug: "mastering-claude-ai",
-      excerpt: "Advanced techniques and best practices for getting the most out of Claude AI..."
-    },
-    {
-      title: "My 91 Weekly Supplements for Optimal Health and Longevity",
-      date: "2024-07-24",
-      readTime: "4 minute read",
-      slug: "supplements",
-      excerpt: "A detailed breakdown of my supplement stack for health optimization..."
-    },
-    // Add more blog posts here
-  ];
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const logger = useMemo(() => logging.getLogger('BlogList'), []);
+
+  useEffect(() => {
+    let mounted = true;
+
+    async function fetchPosts() {
+      try {
+        logger.info('Fetching blog posts');
+        const blogPosts = await loadBlogPosts();
+        if (mounted) {
+          setPosts(blogPosts);
+          setLoading(false);
+        }
+      } catch (err) {
+        logger.error('Failed to fetch blog posts:', err);
+        if (mounted) {
+          setError('Failed to load blog posts. Please try again later.');
+          setLoading(false);
+        }
+      }
+    }
+
+    fetchPosts();
+
+    return () => {
+      mounted = false;
+    };
+  }, [logger]);
+
+  const NoLinksMarkdown = ({ children }) => (
+    <ReactMarkdown
+      components={{
+        a: ({node, children}) => <span>{children}</span>
+      }}
+    >
+      {children}
+    </ReactMarkdown>
+  );
+
+  if (loading) {
+    return (
+      <Container fluid className="project-section">
+        <Particle />
+        <Container>
+          <div className="loading-spinner">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p className="mt-3">Loading blog posts...</p>
+          </div>
+        </Container>
+      </Container>
+    );
+  }
+
+  if (error) {
+    return (
+      <Container fluid className="project-section">
+        <Particle />
+        <Container>
+          <div className="error-message">
+            <div className="alert alert-danger" role="alert">
+              {error}
+            </div>
+          </div>
+        </Container>
+      </Container>
+    );
+  }
 
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section blog-list">
       <Particle />
       <Container>
-        <h1 className="project-heading">
+        <h1 className="project-heading" style={{ marginBottom: "50px" }}>
           My Recent <strong className="purple">Blog Posts</strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -41,13 +93,24 @@ function BlogList() {
             <Col md={12} className="blog-card" key={index}>
               <Link to={`/blog/${post.slug}`} className="blog-link">
                 <div className="blog-card-inner">
-                  <h2>{post.title}</h2>
+                  <h2 className="blog-title">{post.title}</h2>
                   <div className="blog-meta">
-                    <span>{new Date(post.date).toLocaleDateString()}</span>
-                    <span> · </span>
-                    <span>{post.readTime}</span>
+                    <span className="date">{new Date(post.date).toLocaleDateString()}</span>
+                    <span className="separator">·</span>
+                    <span className="read-time">{post.readTime}</span>
+                    {post.tags && post.tags.length > 0 && (
+                      <>
+                        <span className="separator">·</span>
+                        <span className="tags">{post.tags.join(', ')}</span>
+                      </>
+                    )}
                   </div>
-                  <p>{post.excerpt}</p>
+                  <div className="blog-excerpt markdown-content">
+                    <NoLinksMarkdown>{post.excerpt}</NoLinksMarkdown>
+                  </div>
+                  <div className="read-more">
+                    Read more <ArrowRight size={16} />
+                  </div>
                 </div>
               </Link>
             </Col>
