@@ -1,0 +1,11 @@
+.gitignore
+.env
+CNAME
+images/
+Gemfile
+package.json
+files/
+_site/
+_includes/
+_posts/
+.cursorignore
