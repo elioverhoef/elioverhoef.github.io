@@ -474,34 +474,103 @@ button:focus {
 }
 
 .blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+.blog-card-inner {
+  background-color: rgba(119, 53, 136, 0.459);
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459);
+}
+
+.blog-card:hover .blog-card-inner {
+  transform: translateY(-7px);
+  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65);
 }
 
 .blog-link {
-  color: white !important;
-  text-decoration: none !important;
+  text-decoration: none;
+  color: white;
 }
 
 .blog-link:hover {
-  cursor: pointer !important;
+  color: white;
 }
 
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+.blog-meta {
+  color: #be6adf;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.blog-post {
+  color: white;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  opacity: 0.9;
+}
+
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6 {
+  color: var(--imp-text-color);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.blog-post a {
+  color: var(--imp-text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+.blog-post blockquote {
+  border-left: 4px solid var(--imp-text-color);
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  background-color: rgba(119, 53, 136, 0.2);
+  border-radius: 0 8px 8px 0;
+}
+
+.blog-post code {
+  background-color: #2d3748;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.blog-post pre {
+  background-color: #2d3748;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .card-img-top {
