@@ -5,7 +5,7 @@ permalink: /projects/mindmappr
 excerpt: 'Creating automatic mindmaps to inspire creativity.'
 ---
 
-<img src="https://elioverhoef.com/images/mindmappr.png" width="100">
+![Mindmappr AI logo](/images/mindmappr.png)
 
 Creating automatic mindmaps to inspire creativity.
 

@@ -595,8 +595,8 @@ button:focus {
 .markdown-content h5,
 .markdown-content h6 {
   color: var(--imp-text-color);
-  margin-top: 2.5em;
-  margin-bottom: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.75em;
   font-weight: 600;
   line-height: 1.3;
 }
@@ -933,8 +933,10 @@ button:focus {
 .markdown-content h5,
 .markdown-content h6 {
   color: var(--imp-text-color);
-  margin-top: 1.5em;
+  margin-top: 0.25em;
   margin-bottom: 0.75em;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 .markdown-content p {

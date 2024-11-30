@@ -4,16 +4,18 @@ collection: projects
 permalink: /projects/projectcodr
 excerpt: 'Create entire software projects automatically with AI!'
 ---
-Create entire software projects automatically with AI!<br />
-<img src="https://elioverhoef.com/images/projectcodr.png" width="300">
+Create entire software projects automatically with AI!
+
+![ProjectCodr AI logo](/images/projectcodr.png)
 
 Make your programming project in any language, without writing a single line of code!
-<img src="https://elioverhoef.com/images/projectcodr_language.png" width="300">
 
-Just say what you want, and it will be created.<br />
-<img src="https://elioverhoef.com/images/projectcodr_instructions.png" width="400">
+![ProjectCodr language selection](/images/projectcodr_language.png)
+
+Just say what you want, and it will be created.
+
+![ProjectCodr instructions](/images/projectcodr_instructions.png)
 
 You can edit any project after creation, managing multiple projects with multiple versions.
-
 
 [Start creating now!](http://projectcodr.ai/)
