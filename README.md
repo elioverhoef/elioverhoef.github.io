@@ -1,76 +1,77 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://elioverhoef.github.io/" target="_blank">elioverhoef.github.io</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# Portfolio Website
 
-<br/>
+This repository contains the source code for my personal portfolio website, built with React and hosted on GitHub Pages. The website showcases my projects, skills, and professional experience.
 
-<center>
+## 🛠️ Built With
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/elioverhoef/elioverhoef.github.io?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/elioverhoef/elioverhoef.github.io?color=red&logo=github&style=for-the-badge)
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [React Bootstrap](https://react-bootstrap.github.io/) - Front-end framework
+- [React Router](https://reactrouter.com/) - Navigation and routing
+- [React PDF](https://react-pdf.org/) - PDF rendering
+- [React Markdown](https://github.com/remarkjs/react-markdown) - Markdown rendering
+- [tsParticles](https://particles.js.org/) - Interactive particle backgrounds
+- [TypeWriter Effect](https://github.com/tameemsafi/typewriterjs) - Text animation effects
+- [React Icons](https://react-icons.github.io/react-icons/) - Icon components
 
-</center>
+## 🚀 Getting Started
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/elioverhoef/elioverhoef.github.io/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/elioverhoef/elioverhoef.github.io/issues">Request Feature</a>
-</h3>
+### Prerequisites
 
-## TL;DR
+- Node.js (LTS version recommended)
+- pnpm (Package manager)
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [elioverhoef](https://github.com/elioverhoef/elioverhoef.github.io). Thanks!
+### Installation
 
-## Built With
+1. Clone the repository
+   ```bash
+   git clone https://github.com/elioverhoef/elioverhoef.github.io.git
+   ```
 
-My personal portfolio <a href="https://elioverhoef.github.io/" target="_blank">elioverhoef.github.io</a> which features some of my github projects as well as my resume and technical skills.<br/>
+2. Install dependencies
+   ```bash
+   pnpm install
+   ```
 
-This project was built using these technologies.
+3. Start the development server
+   ```bash
+   pnpm start
+   ```
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+The site will be available at `http://localhost:3000`
 
-## Features
+## 📦 Build
 
-**📖 Multi-Page Layout**
+To build the project for production:
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+```bash
+pnpm run build
+```
 
-**📱 Fully Responsive**
+## 🚀 Deployment
 
-## Getting Started
+The website is automatically deployed to GitHub Pages using the gh-pages package. To deploy:
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+```bash
+pnpm run deploy
+```
 
-## 🛠 Installation and Setup Instructions
+## 🗂️ Project Structure
 
-1. Installation: `npm install`
+```
+├── public/          # Public assets
+├── src/
+│   ├── Assets/     # Images and other static assets
+│   ├── components/ # React components
+│   ├── App.js      # Main application component
+│   ├── style.css   # Global styles
+│   └── index.js    # Application entry point
+└── package.json    # Project dependencies and scripts
+```
 
-2. In the project directory, you can run: `npm start`
+## 🌐 Live Website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+The portfolio is live at [elioverhoef.com](https://elioverhoef.com)
 
-## Usage Instructions
+## 📄 License
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/elioverhoef" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+This project is open source and available under the MIT License.
