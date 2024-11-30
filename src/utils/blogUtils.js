@@ -56,9 +56,8 @@ export async function loadBlogPosts() {
     const posts = await Promise.all(
       blogPosts.map(async (filename) => {
         try {
-          // Use PUBLIC_URL to correctly resolve the path
-          const response = await fetch(`${process.env.PUBLIC_URL}/blogs/${filename}`);
-          console.log(`Fetching: ${process.env.PUBLIC_URL}/blogs/${filename}`);
+          const response = await fetch(`/blogs/${filename}`);
+          console.log(`Fetching: /blogs/${filename}`);
           
           if (!response.ok) {
             throw new Error(`Failed to load ${filename}: ${response.status}`);
