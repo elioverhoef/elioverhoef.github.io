@@ -5,7 +5,6 @@ import Particle from "../Particle";
 import mindmappr from "../../Assets/Projects/mindmappr.png";
 import pomodoro from "../../Assets/Projects/pomodoro.png";
 import projectcodr from "../../Assets/Projects/projectcodr.png";
-import w11ultimate from "../../Assets/Projects/w11ultimate.png";
 import yt2blog from "../../Assets/Projects/yt2blog.png";
 
 function Projects() {
@@ -66,7 +65,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={w11ultimate}
               isBlog={false}
               title="Windows 11 Ultimate"
               description="Windows 11 Ultimate is a customized Windows installation made to maximize performance, protect your privacy, and deliver a smooth experience."
