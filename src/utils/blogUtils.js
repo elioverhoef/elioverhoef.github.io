@@ -33,6 +33,7 @@ export function parseFrontmatter(content) {
 
 // Define blog posts metadata - just the filenames
 const blogPosts = [
+  '2024-11-30-ai-prompting-framework.md',
   '2024-08-24-supplements.md',
   '2024-08-29-ai-coding-prompt.md',
   '2024-04-23-nmn.md',
