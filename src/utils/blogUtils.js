@@ -36,20 +36,31 @@ export async function loadBlogPosts() {
   logger.info('Loading blog posts');
   
   try {
-    // First load the index file
-    const indexResponse = await fetch('/blogs/index.json');
+    // Get base URL from package.json homepage or default to ''
+    const baseUrl = process.env.PUBLIC_URL || '';
+    const indexUrl = `${baseUrl}/blogs/index.json`;
+    logger.info('Fetching index from:', indexUrl);
+    
+    const indexResponse = await fetch(indexUrl);
     if (!indexResponse.ok) {
+      logger.error('Failed to load blog index:', {
+        status: indexResponse.status,
+        statusText: indexResponse.statusText,
+        url: indexUrl
+      });
       throw new Error(`Failed to load blog index: ${indexResponse.status}`);
     }
     
     const blogFiles = await indexResponse.json();
+    logger.info('Successfully loaded blog index:', blogFiles);
     
     const posts = await Promise.all(
       blogFiles.map(async (filename) => {
         try {
-          const response = await fetch(`/blogs/${filename}`);
-          console.log(`Fetching: /blogs/${filename}`);
+          const blogUrl = `${baseUrl}/blogs/${filename}`;
+          logger.info(`Fetching blog post: ${blogUrl}`);
           
+          const response = await fetch(blogUrl);
           if (!response.ok) {
             throw new Error(`Failed to load ${filename}: ${response.status}`);
           }

@@ -39,13 +39,20 @@ export function parseFrontmatter(content) {
 }
 
 export async function loadContent(type) {
+  const logger = logging.getLogger('projectUtils');
+  
   try {
-    logger.info(`Starting to load ${type}...`);
+    const baseUrl = process.env.PUBLIC_URL || '';
+    const indexUrl = `${baseUrl}/${type}/index.json`;
+    logger.info(`Loading ${type} index from: ${indexUrl}`);
     
-    // First load the index file
-    const indexResponse = await fetch(`/${type}/index.json`);
+    const indexResponse = await fetch(indexUrl);
     if (!indexResponse.ok) {
-      logger.error(`Failed to load ${type} index: ${indexResponse.status} ${indexResponse.statusText}`);
+      logger.error(`Failed to load ${type} index:`, {
+        status: indexResponse.status,
+        statusText: indexResponse.statusText,
+        url: indexUrl
+      });
       throw new Error(`Failed to load ${type} index: ${indexResponse.status}`);
     }
     
