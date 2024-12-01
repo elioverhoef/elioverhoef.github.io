@@ -405,9 +405,12 @@ button:focus {
 /* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: auto;
+  bottom: 0;
 }
 .footer-copywright {
   text-align: center !important;
@@ -449,9 +452,10 @@ button:focus {
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 30px;
   background-image: var(--section-background-color) !important;
   z-index: 1 !important;
+  min-height: calc(100vh - 60px);
 }
 
 .project-card {
@@ -1030,4 +1034,16 @@ button:focus {
   .blog-card-inner {
     padding: 1.5rem;
   }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }

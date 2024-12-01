@@ -35,16 +35,18 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/project/:slug" element={<Project />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
+        <main>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/project/:slug" element={<Project />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="*" element={<Navigate to="/"/>} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
