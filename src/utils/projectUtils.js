@@ -75,13 +75,16 @@ export async function loadContent(type) {
     const items = await Promise.all(
       files.map(async (filename) => {
         try {
-          logger.info(`Fetching ${type}/${filename}...`);
-          const response = await fetch(`/${type}/${filename}`);
+          const fileUrl = `${baseUrl}/${type}/${filename}`;
+          logger.info(`Fetching ${fileUrl}...`);
+          
+          const response = await fetch(fileUrl);
           
           if (!response.ok) {
             logger.error(`Failed to fetch ${filename}:`, {
               status: response.status,
-              statusText: response.statusText
+              statusText: response.statusText,
+              url: fileUrl
             });
             return null;
           }

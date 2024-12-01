@@ -36,7 +36,6 @@ export async function loadBlogPosts() {
   logger.info('Loading blog posts');
   
   try {
-    // Get base URL from package.json homepage or default to ''
     const baseUrl = process.env.PUBLIC_URL || '';
     const indexUrl = `${baseUrl}/blogs/index.json`;
     logger.info('Fetching index from:', indexUrl);
@@ -62,6 +61,11 @@ export async function loadBlogPosts() {
           
           const response = await fetch(blogUrl);
           if (!response.ok) {
+            logger.error(`Failed to fetch ${filename}:`, {
+              status: response.status,
+              statusText: response.statusText,
+              url: blogUrl
+            });
             throw new Error(`Failed to load ${filename}: ${response.status}`);
           }
           const content = await response.text();
