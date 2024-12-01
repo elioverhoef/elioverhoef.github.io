@@ -31,30 +31,21 @@ export function parseFrontmatter(content) {
   };
 }
 
-// Define blog posts metadata - just the filenames
-const blogPosts = [
-  '2024-11-30-ai-prompting-framework.md',
-  '2024-08-24-supplements.md',
-  '2024-08-29-ai-coding-prompt.md',
-  '2024-04-23-nmn.md',
-  '2024-08-20-mastering-claude-ai.md',
-  '2023-09-15-improving-sleep.md',
-  '2023-10-05-automating-optimal-nutrition.md',
-  '2023-12-31-optimized-morning-routine.md',
-  '2024-02-22-ageless.md',
-  '2023-07-14-is-fat-healthy.md',
-  '2023-08-06-7-minute-workout.md',
-  '2022-08-06-fasting.md',
-  '2022-09-03-health-ideas.md'
-];
-
 export async function loadBlogPosts() {
   const logger = logging.getLogger('blogUtils');
   logger.info('Loading blog posts');
   
   try {
+    // First load the index file
+    const indexResponse = await fetch('/blogs/index.json');
+    if (!indexResponse.ok) {
+      throw new Error(`Failed to load blog index: ${indexResponse.status}`);
+    }
+    
+    const blogFiles = await indexResponse.json();
+    
     const posts = await Promise.all(
-      blogPosts.map(async (filename) => {
+      blogFiles.map(async (filename) => {
         try {
           const response = await fetch(`/blogs/${filename}`);
           console.log(`Fetching: /blogs/${filename}`);
