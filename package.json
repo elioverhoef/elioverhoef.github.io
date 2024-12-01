@@ -28,8 +28,9 @@
     "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "prebuild": "node scripts/bundle-content.js",
     "build": "react-scripts build",
+    "postbuild": "node scripts/verify-build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

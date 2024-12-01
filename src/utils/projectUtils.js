@@ -1,4 +1,5 @@
 import logging from './logging';
+import urlUtils from './urlUtils';
 
 const logger = logging.getLogger('projectUtils');
 
@@ -42,116 +43,67 @@ export async function loadContent(type) {
   const logger = logging.getLogger('projectUtils');
   
   try {
-    const baseUrl = process.env.PUBLIC_URL || '';
-    const indexUrl = `${baseUrl}/${type}/index.json`;
-    logger.info(`Loading ${type} index from: ${indexUrl}`);
+    // First load the content bundle
+    const bundleUrl = urlUtils.getContentUrl(type, 'content-bundle.json');
+    logger.info(`Loading ${type} bundle from:`, bundleUrl);
     
+    const bundleResponse = await fetch(bundleUrl);
+    if (!bundleResponse.ok) {
+      throw new Error(`Failed to load ${type} bundle: ${bundleResponse.status}`);
+    }
+    
+    const contentBundle = await bundleResponse.json();
+    logger.info(`Loaded content bundle with ${Object.keys(contentBundle).length} items`);
+
+    // Load index to maintain order
+    const indexUrl = urlUtils.getContentUrl(type, 'index.json');
     const indexResponse = await fetch(indexUrl);
     if (!indexResponse.ok) {
-      logger.error(`Failed to load ${type} index:`, {
-        status: indexResponse.status,
-        statusText: indexResponse.statusText,
-        url: indexUrl
-      });
       throw new Error(`Failed to load ${type} index: ${indexResponse.status}`);
     }
     
-    // Log the raw response text for debugging
-    const responseText = await indexResponse.text();
-    logger.info(`Raw index response:`, responseText);
+    const files = await indexResponse.json();
     
-    let files;
-    try {
-      files = JSON.parse(responseText);
-      logger.info(`Successfully parsed ${type} index:`, files);
-    } catch (parseError) {
-      logger.error(`Failed to parse ${type} index JSON:`, {
-        error: parseError.message,
-        responseText
-      });
-      throw parseError;
-    }
-
-    const items = await Promise.all(
-      files.map(async (filename) => {
-        try {
-          const fileUrl = `${baseUrl}/${type}/${filename}`;
-          logger.info(`Fetching ${fileUrl}...`);
-          
-          const response = await fetch(fileUrl);
-          
-          if (!response.ok) {
-            logger.error(`Failed to fetch ${filename}:`, {
-              status: response.status,
-              statusText: response.statusText,
-              url: fileUrl
-            });
-            return null;
-          }
-          
-          const text = await response.text();
-          logger.info(`Content for ${filename}:`, {
-            length: text.length,
-            preview: text.substring(0, 200) // Log first 200 chars
-          });
-          
-          const { data, content } = parseFrontmatter(text);
-          logger.info(`Parsed ${filename}:`, {
-            frontmatter: data,
-            contentPreview: content.substring(0, 100)
-          });
-          
-          // Extract first paragraph for excerpt if not provided
-          let preview = '';
-          if (!data.excerpt) {
-            const firstParagraph = content.match(/^(.+?)(?:\n\n|\n$)/);
-            preview = firstParagraph ? firstParagraph[1] : content;
-            preview = preview.replace(/[#*[\]`]/g, '').trim();
-          }
-
-          const result = {
-            ...data,
-            content,
-            slug: filename.replace(/\.md$/, ''),
-            excerpt: data.excerpt || preview || 'No preview available',
-            tags: data.tags ? data.tags.split(',').map(tag => tag.trim()) : [],
-          };
-          
-          logger.info(`Processed ${filename}:`, {
-            slug: result.slug,
-            excerpt: result.excerpt,
-            tags: result.tags
-          });
-          
-          return result;
-
-        } catch (err) {
-          logger.error(`Failed to process ${type} file ${filename}:`, {
-            error: err.message,
-            stack: err.stack
-          });
+    // Process files using the bundle
+    const items = files.map(filename => {
+      try {
+        const content = contentBundle[filename];
+        if (!content) {
+          logger.error(`Content not found in bundle for ${filename}`);
           return null;
         }
-      })
-    );
 
-    // Filter out any null items and sort by date
+        const { data, content: markdownContent } = parseFrontmatter(content);
+        
+        let preview = '';
+        if (!data.excerpt) {
+          const firstParagraph = markdownContent.match(/^(.+?)(?:\n\n|\n$)/);
+          preview = firstParagraph ? firstParagraph[1] : markdownContent;
+          preview = preview.replace(/[#*[\]`]/g, '').trim();
+        }
+
+        return {
+          ...data,
+          content: markdownContent,
+          slug: filename.replace(/\.md$/, ''),
+          excerpt: data.excerpt || preview || 'No preview available',
+          tags: data.tags ? data.tags.split(',').map(tag => tag.trim()) : [],
+        };
+      } catch (err) {
+        logger.error(`Failed to process ${filename}:`, err);
+        return null;
+      }
+    });
+
     const filteredItems = items.filter(item => item !== null);
-    logger.info(`Successfully loaded ${filteredItems.length} ${type} items`);
+    logger.info(`Successfully processed ${filteredItems.length} ${type} items`);
     
-    const sortedItems = filteredItems.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
-    logger.info(`Sorted ${type} items:`, sortedItems.map(item => ({
-      slug: item.slug,
-      date: item.date
-    })));
-
-    return sortedItems;
+    return filteredItems.sort((a, b) => 
+      new Date(b.date || 0) - new Date(a.date || 0)
+    );
     
   } catch (error) {
-    logger.error(`Failed to load ${type}:`, {
-      error: error.message,
-      stack: error.stack
-    });
+    logger.error(`Failed to load ${type}:`, error);
     throw error;
   }
 } 
