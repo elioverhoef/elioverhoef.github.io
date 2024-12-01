@@ -1,4 +1,3 @@
-import logging from './logging';
 import urlUtils from './urlUtils';
 
 export function parseFrontmatter(content) {
@@ -15,13 +14,11 @@ export function parseFrontmatter(content) {
   const frontmatter = match[1];
   const contentBody = match[2];
   
-  // Parse frontmatter
   const data = {};
   frontmatter.split('\n').forEach(line => {
     const [key, ...valueParts] = line.split(':');
     if (key && valueParts.length) {
       const value = valueParts.join(':').trim();
-      // Remove quotes if they exist
       data[key.trim()] = value.replace(/^["'](.*)["']$/, '$1');
     }
   });
@@ -33,12 +30,8 @@ export function parseFrontmatter(content) {
 }
 
 export async function loadBlogPosts() {
-  const logger = logging.getLogger('blogUtils');
-  
   try {
     const bundleUrl = urlUtils.getContentUrl('blogs', 'content-bundle.json');
-    logger.info('Loading blog bundle from:', bundleUrl);
-    
     const bundleResponse = await fetch(bundleUrl);
     if (!bundleResponse.ok) {
       throw new Error(`Failed to load blog bundle: ${bundleResponse.status}`);
@@ -58,16 +51,12 @@ export async function loadBlogPosts() {
       try {
         const content = contentBundle[filename];
         if (!content) {
-          logger.error(`Content not found in bundle for ${filename}`);
           return null;
         }
 
         const { data, content: markdownContent } = parseFrontmatter(content);
         
-        // Get slug from filename without date and extension
         const slug = filename.replace(/^\d{4}-\d{2}-\d{2}-(.*)\.md$/, '$1');
-        
-        // Calculate read time
         const wordCount = markdownContent.trim().split(/\s+/).length;
         const readTime = `${Math.max(1, Math.ceil(wordCount / 200))} minute read`;
         
@@ -77,11 +66,10 @@ export async function loadBlogPosts() {
           slug,
           readTime,
           content: markdownContent,
-          excerpt: data.excerpt || markdownContent.split('\n\n')[0], // Get first paragraph
+          excerpt: data.excerpt || markdownContent.split('\n\n')[0],
           tags: data.tags ? data.tags.split(',').map(tag => tag.trim()) : [],
         };
       } catch (err) {
-        logger.error(`Failed to process ${filename}:`, err);
         return null;
       }
     });
@@ -91,7 +79,6 @@ export async function loadBlogPosts() {
       .sort((a, b) => new Date(b.date) - new Date(a.date));
       
   } catch (err) {
-    logger.error('Failed to load blog posts:', err);
     throw err;
   }
 }

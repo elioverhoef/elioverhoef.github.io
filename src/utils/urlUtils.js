@@ -1,14 +1,10 @@
 const urlUtils = {
-  getBaseUrl: () => '',
-
   getContentUrl: (type, filename) => {
-    const baseUrl = urlUtils.getBaseUrl();
-    return `${baseUrl}/${type}/${filename}`.replace(/\/+/g, '/');
+    return `/${type}/${filename}`.replace(/\/+/g, '/');
   },
 
   getIndexUrl: (type) => {
-    const baseUrl = urlUtils.getBaseUrl();
-    return `${baseUrl}/${type}/index.json`.replace(/\/+/g, '/');
+    return `/${type}/index.json`.replace(/\/+/g, '/');
   }
 };
 
