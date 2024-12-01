@@ -1,8 +1,5 @@
 const urlUtils = {
-  getBaseUrl: () => {
-    const isDev = process.env.NODE_ENV === 'development';
-    return isDev ? '' : (process.env.PUBLIC_URL || '');
-  },
+  getBaseUrl: () => '',
 
   getContentUrl: (type, filename) => {
     const baseUrl = urlUtils.getBaseUrl();
