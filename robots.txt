@@ -1,3 +1,25 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for elioverhoef.com
+# Updated 2024
+
+# Global rules
 User-agent: *
-Disallow:
+Allow: /
+Allow: /project/
+Allow: /blog/
+Allow: /about/
+
+# Prevent crawling of technical files
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /static/
+
+# Crawl-delay to prevent overwhelming server
+Crawl-delay: 1
+
+# Rate limits for specific bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
