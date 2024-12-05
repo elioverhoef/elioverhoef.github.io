@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Badge } from "react-bootstrap";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { ArrowLeft, Calendar } from "lucide-react";
 import Particle from "../Particle";
-import logging from "../../utils/logging";
 
 function MarkdownContent({ type, loadContent }) {
   const { slug } = useParams();
@@ -12,21 +11,18 @@ function MarkdownContent({ type, loadContent }) {
   const [content, setContent] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const logger = useMemo(() => logging.getLogger('MarkdownContent'), []);
 
   useEffect(() => {
     let mounted = true;
 
     async function fetchContent() {
       try {
-        logger.info(`Fetching ${type} content for: ${slug}`);
         const data = await loadContent(slug);
         if (mounted) {
           setContent(data);
           setLoading(false);
         }
       } catch (err) {
-        logger.error(`Failed to fetch ${type} content:`, err);
         if (mounted) {
           setError(`Failed to load ${type}. Please try again later.`);
           setLoading(false);
@@ -40,7 +36,7 @@ function MarkdownContent({ type, loadContent }) {
     return () => {
       mounted = false;
     };
-  }, [slug, type, loadContent, navigate, logger]);
+  }, [slug, type, loadContent, navigate]);
 
   if (loading) {
     return (

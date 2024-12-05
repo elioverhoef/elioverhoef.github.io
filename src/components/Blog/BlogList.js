@@ -1,31 +1,27 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { loadBlogPosts } from "../../utils/blogUtils";
-import logging from "../../utils/logging";
 import { ArrowRight } from "lucide-react";
 
 function BlogList() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const logger = useMemo(() => logging.getLogger('BlogList'), []);
 
   useEffect(() => {
     let mounted = true;
 
     async function fetchPosts() {
       try {
-        logger.info('Fetching blog posts');
         const blogPosts = await loadBlogPosts();
         if (mounted) {
           setPosts(blogPosts);
           setLoading(false);
         }
       } catch (err) {
-        logger.error('Failed to fetch blog posts:', err);
         if (mounted) {
           setError('Failed to load blog posts. Please try again later.');
           setLoading(false);
@@ -38,7 +34,7 @@ function BlogList() {
     return () => {
       mounted = false;
     };
-  }, [logger]);
+  }, []);
 
   const NoLinksMarkdown = ({ children }) => (
     <ReactMarkdown

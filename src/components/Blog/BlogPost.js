@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Badge } from "react-bootstrap";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import Particle from "../Particle";
 import { loadBlogPosts } from "../../utils/blogUtils";
-import logging from "../../utils/logging";
 
 function BlogPost() {
   const { slug } = useParams();
@@ -13,7 +12,6 @@ function BlogPost() {
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const logger = useMemo(() => logging.getLogger('BlogPost'), []);
 
   useEffect(() => {
     let mounted = true;
@@ -32,7 +30,6 @@ function BlogPost() {
           setLoading(false);
         }
       } catch (err) {
-        logger.error("Error loading blog post:", err);
         if (mounted) {
           setError('Blog post not found');
           setLoading(false);
@@ -46,7 +43,7 @@ function BlogPost() {
     return () => {
       mounted = false;
     };
-  }, [slug, navigate, logger]);
+  }, [slug, navigate]);
 
   if (loading) {
     return (
