@@ -857,60 +857,6 @@ button:focus {
   }
 }
 
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-.fork-btn-inner::after {
-  display: none !important;
-}
-
-.react-pdf__Document {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
-
-.react-pdf__Page {
-  max-width: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  margin: 1rem 0;
-  background: white;
-}
-
-.react-pdf__Page canvas {
-  max-width: 100% !important;
-  height: auto !important;
-}
-
-@media (max-width: 786px) {
-  .resume-section {
-    padding-top: 60px !important;
-  }
-  .react-pdf__Page {
-    padding: 0;
-    margin: 0.5rem 0;
-  }
-  .react-pdf__Page canvas {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-
 .loading-spinner {
   color: white;
   text-align: center;
