@@ -1,4 +1,3 @@
-
 ---
 title: "Free Google Colab? Try Lightning AI ⚡️ for Your AI Projects!"
 date: 2024-12-15
@@ -11,7 +10,7 @@ tags:
   - tools
 ---
 
-Lightning AI
+![Lightning AI ⚡️](https://miro.medium.com/v2/resize:fit:720/format:webp/1*nGNXLQeqPrT5sEvSdEPqTg.png)
 
 ## The Problem with Google Colab
 
