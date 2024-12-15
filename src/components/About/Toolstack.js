@@ -12,19 +12,34 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <DiVisualstudio />
+        <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+          <DiVisualstudio />
+          <p className="tech-label">VS Code</p>
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
+          <SiPostman />
+          <p className="tech-label">Postman</p>
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNotion />
+        <a href="https://www.notion.so/" target="_blank" rel="noreferrer">
+          <SiNotion />
+          <p className="tech-label">Notion</p>
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiClaude />
+        <a href="https://claude.ai/" target="_blank" rel="noreferrer">
+          <SiClaude />
+          <p className="tech-label">Claude AI</p>
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTicktick />
+        <a href="https://ticktick.com/" target="_blank" rel="noreferrer">
+          <SiTicktick />
+          <p className="tech-label">TickTick</p>
+        </a>
       </Col>
     </Row>
   );

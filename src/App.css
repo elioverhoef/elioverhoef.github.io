@@ -28,6 +28,51 @@
   color: #61dafb;
 }
 
+.home-hero-image {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(211, 139, 252, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-hero-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(211, 139, 252, 0.25);
+}
+
+.myAvtar img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #623686;
+}
+
+.about-img img {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(211, 139, 252, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.tech-icons {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.tech-label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.tech-icons:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icons a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
