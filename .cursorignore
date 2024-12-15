@@ -7,3 +7,6 @@ Images/
 Assets/
 *.md
 .*
+*.yaml
+*.json
+*.lock
