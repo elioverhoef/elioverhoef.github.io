@@ -73,6 +73,26 @@
   color: inherit;
 }
 
+.project-card-view {
+  background: rgba(171, 146, 193, 0.05) !important;
+  border: 1px solid rgba(171, 146, 193, 0.15) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 20px rgba(171, 146, 193, 0.1) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 25px rgba(171, 146, 193, 0.2) !important;
+}
+
+.project-card-view img {
+  border-radius: 15px 15px 0 0;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
