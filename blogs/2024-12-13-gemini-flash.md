@@ -1,4 +1,3 @@
-
 ---
 title: "Gemini 2.0 Flash: Ultrafast, smart model with Real-Time Multimodal Capabilities"
 date: 2024-12-13
@@ -11,7 +10,7 @@ tags:
   - technology
 ---
 
-Check out the best, fastest model now!
+![Check out the best, fastest model now!](https://miro.medium.com/v2/resize:fit:720/format:webp/1*oALXwp0ZIwfBrUkYBoywjQ.png)
 
 *A deep dive into Google’s groundbreaking AI model that’s reshaping how we interact with technology*
 
