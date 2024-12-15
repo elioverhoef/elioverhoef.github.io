@@ -15,7 +15,7 @@ function AboutCard() {
             I graduated Cum Laude from Utrecht University with dual degrees in Computer Science and Information Science.
             <br />
             <br />
-            Currently, I'm focused on developing <a href="https://projectcodr.ai" target="_blank" rel="noreferrer"><span className="purple">ProjectCodr</span></a> while pursuing excellence in personal health optimization through disciplined daily practices.
+            Currently, I'm focused on developing <a href="https://projectcodr.ai" target="_blank" rel="noreferrer"><span className="purple">ProjectCodr</span></a> while pursuing excellence in personal health optimization through disciplined daily practices. I also write about health and technology on <a href="https://medium.com/@elio.verhoef" target="_blank" rel="noreferrer"><span className="purple">Medium</span></a>.
             <br />
             <br />
             My core focuses include:
@@ -28,13 +28,13 @@ function AboutCard() {
               <ImPointRight /> Daily Meditation
             </li>
             <li className="about-activity">
-              <ImPointRight /> Optimized Sleep
-            </li>
-            <li className="about-activity">
               <ImPointRight /> AI Development
             </li>
             <li className="about-activity">
               <ImPointRight /> Longevity Research & Practice
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Writing on Medium
             </li>
           </ul>
 
