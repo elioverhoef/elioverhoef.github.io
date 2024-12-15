@@ -11,7 +11,7 @@ function Type() {
           "Lifelong Learner",
           "Joy Spreader",
           "ProjectCodr Creator",
-          "Meditation",
+          "Meditator",
           "Problem Solver",
         ],
         autoStart: true,
