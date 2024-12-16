@@ -30,24 +30,24 @@
 
 .home-hero-image {
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(211, 139, 252, 0.15);
+  box-shadow: 0 0 20px rgba(252, 139, 139, 0.15);
   transition: all 0.3s ease-in-out;
 }
 
 .home-hero-image:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 30px rgba(211, 139, 252, 0.25);
+  box-shadow: 0 0 30px rgba(252, 139, 139, 0.25);
 }
 
 .myAvtar img {
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #623686;
+  border: 2px solid #863636;
 }
 
 .about-img img {
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(211, 139, 252, 0.15);
+  box-shadow: 0 0 20px rgba(252, 139, 139, 0.15);
   transition: all 0.3s ease-in-out;
 }
 
@@ -74,16 +74,16 @@
 }
 
 .project-card-view {
-  background: rgba(171, 146, 193, 0.05) !important;
-  border: 1px solid rgba(171, 146, 193, 0.15) !important;
+  background: rgba(193, 146, 146, 0.05) !important;
+  border: 1px solid rgba(193, 146, 146, 0.15) !important;
   border-radius: 15px !important;
-  box-shadow: 0 4px 20px rgba(171, 146, 193, 0.1) !important;
+  box-shadow: 0 4px 20px rgba(193, 146, 146, 0.1) !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 .project-card-view:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 25px rgba(171, 146, 193, 0.2) !important;
+  box-shadow: 0 4px 25px rgba(193, 146, 146, 0.2) !important;
 }
 
 .project-card-view img {

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -30,6 +30,16 @@ function Footer() {
                   rel="noopener noreferrer"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://medium.com/@elio.verhoef"
+                  style={{ color: "white" }}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <FaMediumM />
                 </a>
               </li>
             </ul>
