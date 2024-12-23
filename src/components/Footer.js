@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
 
 function Footer() {
@@ -16,7 +14,7 @@ function Footer() {
                 <a
                   href="https://github.com/elioverhoef"
                   style={{ color: "white" }}
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <AiFillGithub />
@@ -26,7 +24,7 @@ function Footer() {
                 <a
                   href="https://www.linkedin.com/in/elio-verhoef-699462291/"
                   style={{ color: "white" }}
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedinIn />
@@ -36,7 +34,7 @@ function Footer() {
                 <a
                   href="https://medium.com/@elio.verhoef"
                   style={{ color: "white" }}
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaMediumM />

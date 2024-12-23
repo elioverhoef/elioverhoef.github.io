@@ -1,5 +1,5 @@
 ---
-title: 'Ideas for a healthy and long life'
+title: "Ideas for a healthy and long life"
 date: 2022-09-03
 permalink: /posts/2022/09/ideas-for-a-healthy-and-long-life/
 tags:
@@ -15,8 +15,10 @@ tags:
 ---
 
 ### For people committed to health and well-being
+
 In [this booklet](https://www.amazon.com/Ideas-healthy-long-life-well-being-ebook/dp/B0BD26MLDP), I share with you some ideas to live a longer life with greater health, happiness, and energy.
 7 topics will be discussed:
+
 - Fasting
 - Eating
 - Exercise

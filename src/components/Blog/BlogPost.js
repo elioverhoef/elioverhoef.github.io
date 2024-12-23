@@ -19,21 +19,21 @@ function BlogPost() {
     const loadPost = async () => {
       try {
         const posts = await loadBlogPosts();
-        const foundPost = posts.find(p => p.slug === slug);
-        
+        const foundPost = posts.find((p) => p.slug === slug);
+
         if (!foundPost && mounted) {
-          throw new Error('Blog post not found');
+          throw new Error("Blog post not found");
         }
-        
+
         if (mounted) {
           setPost(foundPost);
           setLoading(false);
         }
       } catch (err) {
         if (mounted) {
-          setError('Blog post not found');
+          setError("Blog post not found");
           setLoading(false);
-          setTimeout(() => navigate('/blog'), 2000);
+          setTimeout(() => navigate("/blog"), 2000);
         }
       }
     };
@@ -68,7 +68,7 @@ function BlogPost() {
         <Container>
           <div className="error-message">
             <div className="alert alert-danger" role="alert">
-              {error || 'Post not found'}. Redirecting to blog list...
+              {error || "Post not found"}. Redirecting to blog list...
             </div>
           </div>
         </Container>
@@ -85,18 +85,18 @@ function BlogPost() {
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Blog
           </Link>
-          
+
           <header className="blog-header">
             <div className="tag-container">
-              {post.tags?.map(tag => (
+              {post.tags?.map((tag) => (
                 <Badge key={tag} className="blog-tag">
                   {tag}
                 </Badge>
               ))}
             </div>
-            
+
             <h1 className="blog-title">{post.title}</h1>
-            
+
             <div className="blog-meta">
               <span className="date">
                 <Calendar className="w-5 h-5 mr-2" />
@@ -109,7 +109,7 @@ function BlogPost() {
               </span>
             </div>
           </header>
-          
+
           <div className="markdown-content prose prose-invert prose-purple">
             <ReactMarkdown>{post.content}</ReactMarkdown>
           </div>

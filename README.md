@@ -23,11 +23,13 @@ This repository contains the source code for my personal portfolio website, buil
 ### Installation
 
 1. Clone the repository
+
    ```bash
    git clone https://github.com/elioverhoef/elioverhoef.github.io.git
    ```
 
 2. Install dependencies
+
    ```bash
    pnpm install
    ```

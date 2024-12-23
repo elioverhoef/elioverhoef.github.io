@@ -4,8 +4,8 @@ import { loadContent } from "../../utils/projectUtils";
 
 function Project() {
   const loadProjectContent = async (slug) => {
-    const projects = await loadContent('projects');
-    const project = projects.find(p => p.slug === slug);
+    const projects = await loadContent("projects");
+    const project = projects.find((p) => p.slug === slug);
     if (!project) throw new Error("Project not found");
     return project;
   };

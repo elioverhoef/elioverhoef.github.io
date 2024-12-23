@@ -2,7 +2,7 @@
 title: "Mindmappr AI"
 collection: projects
 permalink: /projects/mindmappr
-excerpt: 'Creating automatic mindmaps to inspire creativity.'
+excerpt: "Creating automatic mindmaps to inspire creativity."
 ---
 
 ![Mindmappr AI logo](/images/mindmappr.png)

@@ -1,11 +1,11 @@
 const urlUtils = {
   getContentUrl: (type, filename) => {
-    return `/${type}/${filename}`.replace(/\/+/g, '/');
+    return `/${type}/${filename}`.replace(/\/+/g, "/");
   },
 
   getIndexUrl: (type) => {
-    return `/${type}/index.json`.replace(/\/+/g, '/');
-  }
+    return `/${type}/index.json`.replace(/\/+/g, "/");
+  },
 };
 
-export default urlUtils; 
+export default urlUtils;

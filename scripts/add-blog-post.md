@@ -5,6 +5,7 @@ This document outlines the process for adding a new blog post to the website.
 ## Input Format
 
 When requesting to add a new blog post, provide:
+
 1. The URL of the blog post (e.g. from Medium)
 2. The command: "Please add this blog post: [URL]"
 
@@ -28,11 +29,13 @@ When requesting to add a new blog post, provide:
 ## Example
 
 Input:
+
 ```
 Please add this blog post: https://medium.com/@author/my-awesome-post-123456
 ```
 
 This will:
+
 1. Create `public/blogs/2024-01-01-my-awesome-post.md` with proper frontmatter
 2. Update `public/blogs/index.json`
 3. Regenerate the content bundle

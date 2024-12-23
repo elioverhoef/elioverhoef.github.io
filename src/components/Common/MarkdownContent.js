@@ -78,18 +78,18 @@ function MarkdownContent({ type, loadContent }) {
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to {type.charAt(0).toUpperCase() + type.slice(1)}s
           </Link>
-          
+
           <header className="content-header">
             <div className="tag-container">
-              {content.tags?.map(tag => (
+              {content.tags?.map((tag) => (
                 <Badge key={tag} className="content-tag">
                   {tag}
                 </Badge>
               ))}
             </div>
-            
+
             <h1 className="content-title">{content.title}</h1>
-            
+
             {content.date && (
               <div className="content-meta">
                 <span className="date">
@@ -99,7 +99,7 @@ function MarkdownContent({ type, loadContent }) {
               </div>
             )}
           </header>
-          
+
           <div className="markdown-content prose prose-invert prose-purple">
             <ReactMarkdown>{content.content}</ReactMarkdown>
           </div>

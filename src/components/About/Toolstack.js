@@ -1,18 +1,17 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiPostman,
-  SiNotion,
-  SiClaude,
-  SiTicktick,
-} from "react-icons/si";
+import { SiPostman, SiNotion, SiClaude, SiTicktick } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+        <a
+          href="https://code.visualstudio.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <DiVisualstudio />
           <p className="tech-label">VS Code</p>
         </a>

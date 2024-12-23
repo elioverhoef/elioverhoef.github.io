@@ -23,7 +23,7 @@ function BlogList() {
         }
       } catch (err) {
         if (mounted) {
-          setError('Failed to load blog posts. Please try again later.');
+          setError("Failed to load blog posts. Please try again later.");
           setLoading(false);
         }
       }
@@ -39,7 +39,7 @@ function BlogList() {
   const NoLinksMarkdown = ({ children }) => (
     <ReactMarkdown
       components={{
-        a: ({node, children}) => <span>{children}</span>
+        a: ({ node, children }) => <span>{children}</span>,
       }}
     >
       {children}
@@ -91,13 +91,15 @@ function BlogList() {
                 <div className="blog-card-inner">
                   <h2 className="blog-title">{post.title}</h2>
                   <div className="blog-meta">
-                    <span className="date">{new Date(post.date).toLocaleDateString()}</span>
+                    <span className="date">
+                      {new Date(post.date).toLocaleDateString()}
+                    </span>
                     <span className="separator">·</span>
                     <span className="read-time">{post.readTime}</span>
                     {post.tags && post.tags.length > 0 && (
                       <>
                         <span className="separator">·</span>
-                        <span className="tags">{post.tags.join(', ')}</span>
+                        <span className="tags">{post.tags.join(", ")}</span>
                       </>
                     )}
                   </div>

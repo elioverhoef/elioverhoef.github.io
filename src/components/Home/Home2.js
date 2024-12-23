@@ -2,13 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/profile.jpg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub
-} from "react-icons/ai";
-import {
-  FaLinkedin,
-  FaMediumM,
-} from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedin, FaMediumM } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -20,11 +15,13 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Hi, I'm Elio! I'm passionate about optimizing human potential through technology and health innovations.
+              Hi, I'm Elio! I'm passionate about optimizing human potential
+              through technology and health innovations.
               <br />
-              <br />
-              I combine my expertise in <b className="purple">AI development</b> with deep knowledge of{" "}
-              <b className="purple">health optimization and longevity</b> to create impactful solutions.
+              <br />I combine my expertise in{" "}
+              <b className="purple">AI development</b> with deep knowledge of{" "}
+              <b className="purple">health optimization and longevity</b> to
+              create impactful solutions.
               <br />
               <br />
               My current focus includes{" "}
@@ -35,8 +32,15 @@ function Home2() {
               </i>
               <br />
               <br />
-              I'm working on <a href="https://projectcodr.ai" target="_blank" rel="noreferrer"><b className="purple">ProjectCodr</b></a>, an innovative VS Code extension, while {" "}
-              <b className="purple">running, meditation, and optimized nutrition</b>.
+              I'm working on{" "}
+              <a href="https://projectcodr.ai" target="_blank" rel="noreferrer">
+                <b className="purple">ProjectCodr</b>
+              </a>
+              , an innovative VS Code extension, while{" "}
+              <b className="purple">
+                running, meditation, and optimized nutrition
+              </b>
+              .
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -49,7 +53,10 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>CONNECT WITH ME</h1>
             <p>
-              Let's share ideas about <span className="purple">technology, health optimization, and personal growth</span>
+              Let's share ideas about{" "}
+              <span className="purple">
+                technology, health optimization, and personal growth
+              </span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

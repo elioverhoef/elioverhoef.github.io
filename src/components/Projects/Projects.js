@@ -13,7 +13,7 @@ function Projects() {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const projectData = await loadContent('projects');
+        const projectData = await loadContent("projects");
         setProjects(projectData);
         setLoading(false);
       } catch (err) {
@@ -69,7 +69,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projects.map((project, index) => (
             <Col md={4} className="project-card" key={index}>
-              <Link to={`/project/${project.slug}`} style={{ textDecoration: 'none' }}>
+              <Link
+                to={`/project/${project.slug}`}
+                style={{ textDecoration: "none" }}
+              >
                 <ProjectCard
                   imgPath={project.image}
                   isBlog={false}
