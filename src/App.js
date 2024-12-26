@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import BlogList from "./components/Blog/BlogList";
 import BlogPost from "./components/Blog/BlogPost";
 import Footer from "./components/Footer";
+import Snow from "./components/Snow/Snow";
 import {
   BrowserRouter as Router,
   Route,
@@ -34,6 +35,7 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Snow />
         <Navbar />
         <main>
           <ScrollToTop />
