@@ -2,8 +2,9 @@
 title: "ProjectCodr AI"
 collection: projects
 permalink: /projects/projectcodr
-excerpt: 'Create entire software projects automatically with AI!'
+excerpt: "Create entire software projects automatically with AI!"
 ---
+
 Create entire software projects automatically with AI!
 
 ![ProjectCodr AI logo](/images/projectcodr.png)

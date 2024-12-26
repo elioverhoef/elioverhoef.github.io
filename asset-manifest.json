@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "https://elioverhoef.com/static/css/main.c584adf5.css",
-    "main.js": "https://elioverhoef.com/static/js/main.c7aecbba.js",
+    "main.css": "https://elioverhoef.com/static/css/main.3b15cdff.css",
+    "main.js": "https://elioverhoef.com/static/js/main.6959fe42.js",
     "static/media/profile.jpg": "https://elioverhoef.com/static/media/profile.5b705f814c1905bb9e09.jpg",
     "static/media/home-bg.jpg": "https://elioverhoef.com/static/media/home-bg.715fac0f533df1d4e888.jpg",
     "static/media/dna.jpg": "https://elioverhoef.com/static/media/dna.a713529a457b8082bd37.jpg",
     "static/media/logo.png": "https://elioverhoef.com/static/media/logo.3fde0295b9e07237fbf2.png",
     "static/media/pre.svg": "https://elioverhoef.com/static/media/pre.909cf5d621ea679e0019.svg",
     "index.html": "https://elioverhoef.com/index.html",
-    "main.c584adf5.css.map": "https://elioverhoef.com/static/css/main.c584adf5.css.map",
-    "main.c7aecbba.js.map": "https://elioverhoef.com/static/js/main.c7aecbba.js.map"
+    "main.3b15cdff.css.map": "https://elioverhoef.com/static/css/main.3b15cdff.css.map",
+    "main.6959fe42.js.map": "https://elioverhoef.com/static/js/main.6959fe42.js.map"
   },
   "entrypoints": [
-    "static/css/main.c584adf5.css",
-    "static/js/main.c7aecbba.js"
+    "static/css/main.3b15cdff.css",
+    "static/js/main.6959fe42.js"
   ]
 }

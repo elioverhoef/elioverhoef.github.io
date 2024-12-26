@@ -20,7 +20,7 @@ tags:
   - guide
 ---
 
-> *Looking for a powerful, free alternative to Claude AI for coding? Gemini 2.0 Flash might be exactly what you need. This guide shows you how to leverage its capabilities through modern development tools.*
+> _Looking for a powerful, free alternative to Claude AI for coding? Gemini 2.0 Flash might be exactly what you need. This guide shows you how to leverage its capabilities through modern development tools._
 
 ![A futuristic interface showing code and AI visualizations in blue and dark tones](https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?q=80)
 
@@ -40,7 +40,7 @@ These limits provide ample room for most development workflows, from quick scrip
 ## 🚀 Getting Started with Aider
 
 ![Aider setup](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vwfbrUIKnnjOZN_C-zGbaQ.png)
-*Aider setup*
+_Aider setup_
 
 Aider integration with Gemini 2.0 Flash is straightforward. Here's your step-by-step setup guide:
 
@@ -55,7 +55,7 @@ Pro tip: Consider creating a dedicated environment file for your API keys to str
 ## ⚡ Leveraging Cline
 
 ![Cline setup](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zOKYuguKhguFQ7HMF7HHgw.png)
-*Cline setup*
+_Cline setup_
 
 While Cline's direct Gemini support is still evolving, you can access Gemini 2.0 Flash through its OpenAI-compatible interface. Here's how:
 
@@ -63,4 +63,4 @@ While Cline's direct Gemini support is still evolving, you can access Gemini 2.0
 2. Add your Google AI Studio API key
 3. Enter the Gemini 2.0 Flash model ID (gemini-2.0-flash-exp)
 
-That's all you need to start coding with Gemini 2.0 Flash. The combination of powerful capabilities and free access makes it an excellent choice for developers looking to enhance their coding workflow. 
+That's all you need to start coding with Gemini 2.0 Flash. The combination of powerful capabilities and free access makes it an excellent choice for developers looking to enhance their coding workflow.

@@ -20,7 +20,7 @@ tags:
   - documentation
 ---
 
-> *Have you ever felt frustrated when your AI responses fall short of expectations? You're not alone. Almost all AI interactions could be dramatically improved with better prompting techniques.*
+> _Have you ever felt frustrated when your AI responses fall short of expectations? You're not alone. Almost all AI interactions could be dramatically improved with better prompting techniques._
 
 ![AI Prompting](https://images.unsplash.com/photo-1712002641088-9d76f9080889)
 
@@ -31,6 +31,7 @@ tags:
 Think of AI prompting like learning a new language. Just as fluency in Spanish opens up conversations with millions of people, mastering AI prompting unlocks the full potential of artificial intelligence. This guide shows you how to speak this language fluently.
 
 ### Who This Guide Is For
+
 - Developers seeking to optimize their AI-assisted coding
 - Content creators looking for better AI writing outputs
 - Technical professionals aiming to automate complex tasks
@@ -43,17 +44,20 @@ Just as a master chef follows a proven recipe process (mise en place → prep �
 ![4-Step AI Prompting Framework](https://cdn-images-1.medium.com/v2/resize:fit:800/1*hRm9ynmiZ0pFpBe9jb9krQ.png)
 
 ### Real-World Example: Writing a Python Script
+
 Let's see how this framework transforms a simple request into exceptional output:
 
 ❌ **Basic Prompt**:
 "Write a Python script to process CSV files"
 
 ✅ **Framework-Based Prompt**:
+
 ```markdown
 Create a Python script that processes large CSV files (>1GB) containing sales data, calculating monthly revenue trends and generating summary reports. Here is the head of the CSV:
 [paste head of .csv file(s) here]
 
 Process:
+
 1. Initially, think very carefully about this task, analysing all requirements and constraints using <analysis> tags.
 2. Then, ask me any questions you need to come to a successful implementation.
 3. After I have answered all questions, think step-by-step using <thinking> tags about how to come to the most successful implementation.
@@ -62,6 +66,7 @@ Process:
 ```
 
 This structured prompt would typically lead to an interaction like this:
+
 ```markdown
 <analysis>
 This task requires consideration of:
@@ -73,6 +78,7 @@ This task requires consideration of:
 </analysis>
 
 Essential questions:
+
 1. Are there specific performance requirements?
 2. What format should the summary reports take?
 3. Should the script handle multiple files concurrently?
@@ -103,6 +109,7 @@ Implementation steps:
 ## 🎨 Advanced Prompting Patterns
 
 ### The Design-First Approach
+
 ![AI Design](https://images.unsplash.com/photo-1551288049-bebda4e38f71)
 
 Instead of jumping straight to implementation, ask the AI to think through design first:
@@ -129,6 +136,7 @@ A modern, intuitive menu should:
 ```
 
 ### The 100x Improvement Technique
+
 Simple prompts that drive exceptional results:
 
 ❌ **Basic Prompt**:
@@ -149,6 +157,7 @@ A: Start with the basic framework (Analysis → Questions → Thinking → Execu
 
 **Q: How can I measure the effectiveness of my prompts?**
 A: Track these key metrics:
+
 - Response relevance (does it solve your problem?)
 - Number of responses needed (fewer iterations = better prompts)
 - Implementation success rate
@@ -165,6 +174,7 @@ A: These principles work with any advanced AI model including GPT-4, Llama, Clau
 ## 🌟 Putting It All Together
 
 ### Best Practices Summary
+
 - Start with structured analysis
 - Ask clarifying questions early
 - Think through solutions step-by-step
@@ -172,6 +182,7 @@ A: These principles work with any advanced AI model including GPT-4, Llama, Clau
 - Iterate for improvement
 
 ### Getting Started
+
 1. Choose a simple project
 2. Apply the framework
 3. Review and refine results
