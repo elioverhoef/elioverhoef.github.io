@@ -9,6 +9,7 @@ import BlogPost from "./components/Blog/BlogPost";
 import Footer from "./components/Footer";
 import Snow from "./components/Snow/Snow";
 import ProtectedVisionBoard from "./components/Vision/ProtectedVisionBoard";
+import ChatInterface from "./components/Chat/ChatInterface";
 import {
   BrowserRouter as Router,
   Route,
@@ -53,6 +54,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/blog" element={<BlogList />} />
                     <Route path="/blog/:slug" element={<BlogPost />} />
+                    <Route path="/chat" element={<ChatInterface />} />
                     <Route path="*" element={<Navigate to="/" />} />
                   </Routes>
                 </main>
