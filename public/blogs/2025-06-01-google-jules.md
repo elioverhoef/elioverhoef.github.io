@@ -10,7 +10,7 @@ tags:
   - productivity
 ---
 
-![Autonomous AI coding agent working in the cloud](https://jules.google/static/images/hero-image.png)
+![Autonomous AI coding agent working in the cloud](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*4mZ65ZtBDARse7fJRI8Obg.png)
 
 ## The First Truly Autonomous Coding Agent
 
