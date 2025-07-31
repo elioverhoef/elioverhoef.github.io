@@ -1,5 +1,5 @@
 ---
-title: "The Architect's Stack 2.0: My 2025 Blueprint for Peak Performance & Longevity"
+title: "My Supplement Stack 2.0: 2025 Blueprint for Peak Performance & Longevity"
 date: 2025-07-31
 permalink: /posts/2025/07/supplement-stack-2-0/
 tags:
@@ -15,7 +15,7 @@ tags:
 *   **Last Updated:** July 31, 2025
 *   **Reading Time:** 7 minutes
 
-### **From User to Architect**
+### **Evolution of My Stack**
 
 Two years ago, I shared my initial supplement stack.
 This is my 2025 blueprint. It's a dynamic system, built on blood tests, performance data, and rigorous self-experimentation. It's what fuels my energy, sharpens my mind, and fortifies my long-term health.
@@ -40,9 +40,9 @@ Let's dive into the blueprint.
 
 This stack is taken upon waking to set the baseline for the day.
 
-| Supplement | Dosage | Why I Take It: The Architect's Rationale |
+| Supplement | Dosage | Why I Take It |
 | :--- | :--- | :--- |
-| **Omega-3** (High EPA) | ~3g | **Brain Architecture & Anti-inflammation.** Essential for cognitive function and managing inflammation from intense training. |
+| **Omega-3** (High EPA) | ~3g | **Brain Health & Anti-inflammation.** Essential for cognitive function and managing inflammation from intense training. |
 | **Vitamin D3 + K2** | 2000 IU (D3) | **Hormonal & Immune Baseline.** Crucial for everything from mood to immune defense. K2 ensures calcium is deposited in bones, not arteries. |
 | **Creatine Monohydrate** | 5g | **Dual-Fuel for Muscle & Mind.** A powerhouse for physical power output and, just as importantly, for cognitive energy during deep work. |
 | **Collagen Powder** | 10-20g | **Connective Tissue Support.** Drinking it with water to support the health of my skin. |
@@ -59,7 +59,7 @@ This stack is taken upon waking to set the baseline for the day.
 
 This stack is deployed strategically for cognitive sprints or pre-workout.
 
-| Supplement | Dosage | Why I Take It: The Architect's Rationale |
+| Supplement | Dosage | Why I Take It |
 | :--- | :--- | :--- |
 | **Alpha-GPC** | 300-600mg | **The "Deep Work" Catalyst.** My go-to for intense focus. It boosts acetylcholine, a key neurotransmitter for learning and memory. Taken 30-45 mins before a coding block or critical meeting. |
 | **Pure Brainpower** | 1 capsule | **BDNF Support.** Contains coffee fruit extract to support Brain-Derived Neurotrophic Factor, which helps grow new neurons. Excellent for neuroplasticity and learning. |
@@ -71,7 +71,7 @@ This stack is deployed strategically for cognitive sprints or pre-workout.
 
 This stack is taken 1-2 hours before bed to facilitate deep, restorative sleep.
 
-| Supplement | Dosage | Why I Take It: The Architect's Rationale |
+| Supplement | Dosage | Why I Take It |
 | :--- | :--- | :--- |
 | **Magnesium Glycinate** | ~400mg | **Nervous System Deceleration.** The glycinate form is excellent for promoting calm and relaxation. It quiets the mind after a stimulating day. |
 | **L-Theanine** | 200mg | **"Wakeful Relaxation."** Works synergistically with Magnesium to reduce anxiety and mental chatter without causing drowsiness. It helps me transition into a restful state. |
