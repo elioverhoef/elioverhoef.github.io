@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Badge } from "react-bootstrap";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import Particle from "../Particle";
 import { loadBlogPosts } from "../../utils/blogUtils";
@@ -111,7 +112,7 @@ function BlogPost() {
           </header>
 
           <div className="markdown-content prose prose-invert prose-purple">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
           </div>
         </article>
       </Container>
