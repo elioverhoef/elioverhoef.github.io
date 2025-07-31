@@ -702,6 +702,59 @@ a:hover {
   margin-bottom: 0.8em;
 }
 
+/* Table styles for markdown content */
+.markdown-content table {
+  width: 100%;
+  margin: 2em 0;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.markdown-content table th {
+  background: rgba(240, 112, 112, 0.1);
+  color: var(--imp-text-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.markdown-content table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.markdown-content table tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown-content table td:first-child,
+.markdown-content table th:first-child {
+  font-weight: 600;
+  color: var(--imp-text-color);
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .markdown-content table {
+    font-size: 0.9rem;
+  }
+  
+  .markdown-content table th,
+  .markdown-content table td {
+    padding: 0.75rem 1rem;
+  }
+}
+
 .back-link {
   display: inline-flex;
   align-items: center;
