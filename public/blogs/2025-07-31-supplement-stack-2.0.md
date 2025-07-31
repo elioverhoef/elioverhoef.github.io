@@ -17,8 +17,7 @@ tags:
 
 ### **From User to Architect**
 
-Two years ago, I shared my initial supplement stack. It was the beginning of a journey. Today, as the CTO of LongevAI and a dedicated endurance athlete, that journey has evolved into a systematic process of self-optimization. I don't just *take* supplements; I architect a protocol designed to fuel every facet of my life—from deep work coding sprints to demanding athletic goals.
-
+Two years ago, I shared my initial supplement stack.
 This is my 2025 blueprint. It's a dynamic system, built on blood tests, performance data, and rigorous self-experimentation. It's what fuels my energy, sharpens my mind, and fortifies my long-term health.
 
 > ⚠️ **A Crucial Disclaimer: You Are Not Me.**
