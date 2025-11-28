@@ -25,13 +25,6 @@ function AboutCard() {
             that extend human healthspan.
             <br />
             <br />
-            Previously, I built{" "}
-            <a href="https://projectcodr.ai" target="_blank" rel="noreferrer">
-              <span className="purple">ProjectCodr</span>
-            </a>
-            , a VS Code extension for developers.
-            <br />
-            <br />
             My current focuses:
           </p>
           <ul>

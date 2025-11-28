@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/profile.jpg";
-import Toolstack from "./Toolstack";
 
 function About() {
   return (
@@ -32,11 +31,6 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
       </Container>
     </Container>
   );

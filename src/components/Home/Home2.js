@@ -32,13 +32,6 @@ function Home2() {
               We partner with preventive health clinics and researchers to build
               scalable AI systems that move us closer to{" "}
               <b className="purple">longevity escape velocity</b>.
-              <br />
-              <br />
-              Previously, I built{" "}
-              <a href="https://projectcodr.ai" target="_blank" rel="noreferrer">
-                <b className="purple">ProjectCodr</b>
-              </a>
-              , a VS Code extension for developers.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
