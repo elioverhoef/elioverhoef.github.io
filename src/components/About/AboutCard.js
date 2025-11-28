@@ -8,56 +8,46 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone, I'm <span className="purple">Elio Verhoef</span>, a
-            developer and health optimization enthusiast from{" "}
-            <span className="purple">The Netherlands</span>.
+            I'm <span className="purple">Elio Verhoef</span>, Co-Founder & CTO
+            of{" "}
+            <a
+              href="https://longevai.nl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="purple">LongevAI</span>
+            </a>
+            , based in <span className="purple">The Netherlands</span>.
             <br />
             <br />
-            I graduated Cum Laude from Utrecht University with dual degrees in
-            Computer Science and Information Science.
+            With a foundation in Computer Science and Information Science (Cum
+            Laude, Utrecht University), I'm now focused on building AI systems
+            that extend human healthspan.
             <br />
             <br />
-            Currently, I'm focused on developing{" "}
+            Previously, I built{" "}
             <a href="https://projectcodr.ai" target="_blank" rel="noreferrer">
               <span className="purple">ProjectCodr</span>
-            </a>{" "}
-            while pursuing excellence in personal health optimization through
-            disciplined daily practices. I also write about health and
-            technology on{" "}
-            <a
-              href="https://medium.com/@elio.verhoef"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="purple">Medium</span>
             </a>
-            .
+            , a VS Code extension for developers.
             <br />
             <br />
-            My core focuses include:
+            My current focuses:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Running (Working towards sub-18 5K)
+              <ImPointRight /> Building Scalable AI Systems for Healthcare
             </li>
             <li className="about-activity">
-              <ImPointRight /> Daily Meditation
+              <ImPointRight /> Longevity Research & Biohacking
             </li>
             <li className="about-activity">
-              <ImPointRight /> AI Development
+              <ImPointRight /> Competitive Distance Running & Meditation
             </li>
             <li className="about-activity">
-              <ImPointRight /> Longevity Research & Practice
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing on Medium
+              <ImPointRight /> Open Source & Developer Tooling
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Choose things to enjoy, and enjoy the things you do"{" "}
-          </p>
-          <footer className="blockquote-footer">Elio</footer>
         </blockquote>
       </Card.Body>
     </Card>

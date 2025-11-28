@@ -1,43 +1,66 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiPostman, SiNotion, SiClaude, SiTicktick } from "react-icons/si";
-import { DiVisualstudio } from "react-icons/di";
+import {
+  SiPython,
+  SiTypescript,
+  SiOpenai,
+  SiClaude,
+  SiDocker,
+  SiAmazon,
+} from "react-icons/si";
+import { DiReact } from "react-icons/di";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
+        <a href="https://python.org/" target="_blank" rel="noopener noreferrer">
+          <SiPython />
+          <p className="tech-label">Python</p>
+        </a>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <a
-          href="https://code.visualstudio.com/"
+          href="https://typescriptlang.org/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
-          <DiVisualstudio />
-          <p className="tech-label">VS Code</p>
+          <SiTypescript />
+          <p className="tech-label">TypeScript</p>
         </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
-          <SiPostman />
-          <p className="tech-label">Postman</p>
+        <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+          <DiReact />
+          <p className="tech-label">React</p>
         </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.notion.so/" target="_blank" rel="noreferrer">
-          <SiNotion />
-          <p className="tech-label">Notion</p>
+        <a href="https://openai.com/" target="_blank" rel="noopener noreferrer">
+          <SiOpenai />
+          <p className="tech-label">OpenAI</p>
         </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <a href="https://claude.ai/" target="_blank" rel="noreferrer">
+        <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">
           <SiClaude />
-          <p className="tech-label">Claude AI</p>
+          <p className="tech-label">Claude</p>
         </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <a href="https://ticktick.com/" target="_blank" rel="noreferrer">
-          <SiTicktick />
-          <p className="tech-label">TickTick</p>
+        <a href="https://docker.com/" target="_blank" rel="noopener noreferrer">
+          <SiDocker />
+          <p className="tech-label">Docker</p>
+        </a>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <a
+          href="https://aws.amazon.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiAmazon />
+          <p className="tech-label">AWS</p>
         </a>
       </Col>
     </Row>

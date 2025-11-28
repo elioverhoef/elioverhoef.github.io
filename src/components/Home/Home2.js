@@ -12,35 +12,33 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              BUILDING THE <span className="purple">FUTURE</span> OF HEALTH
             </h1>
             <p className="home-about-body">
-              Hi, I'm Elio! I'm passionate about optimizing human potential
-              through technology and health innovations.
-              <br />
-              <br />I combine my expertise in{" "}
-              <b className="purple">AI development</b> with deep knowledge of{" "}
-              <b className="purple">health optimization and longevity</b> to
-              create impactful solutions.
-              <br />
-              <br />
-              My current focus includes{" "}
-              <i>
-                <b className="purple">
-                  AI development, health optimization research, and running 👟
-                </b>
-              </i>
+              I'm the <b className="purple">Co-Founder & CTO</b> of{" "}
+              <a
+                href="https://longevai.nl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <b className="purple">LongevAI</b>
+              </a>
+              , where we're combining <b className="purple">AI Agents</b>,{" "}
+              <b className="purple">Longevity Science</b>, and{" "}
+              <b className="purple">Personalized Medicine</b> to help people
+              live longer, healthier lives.
               <br />
               <br />
-              I'm working on{" "}
+              We partner with preventive health clinics and researchers to build
+              scalable AI systems that move us closer to{" "}
+              <b className="purple">longevity escape velocity</b>.
+              <br />
+              <br />
+              Previously, I built{" "}
               <a href="https://projectcodr.ai" target="_blank" rel="noreferrer">
                 <b className="purple">ProjectCodr</b>
               </a>
-              , an innovative VS Code extension, while{" "}
-              <b className="purple">
-                running, meditation, and optimized nutrition
-              </b>
-              .
+              , a VS Code extension for developers.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -53,9 +51,9 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>CONNECT WITH ME</h1>
             <p>
-              Let's share ideas about{" "}
+              Let's talk about{" "}
               <span className="purple">
-                technology, health optimization, and personal growth
+                AI, longevity, and building the future of health
               </span>
             </p>
             <ul className="home-about-social-links">

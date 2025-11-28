@@ -8,6 +8,9 @@ function Footer() {
     <footer>
       <Container fluid className="footer">
         <Row>
+          <Col md="4" className="footer-copywright">
+            <h3>© {new Date().getFullYear()} Elio Verhoef</h3>
+          </Col>
           <Col md="4" className="footer-body">
             <ul className="footer-icons">
               <li className="social-icons">
@@ -42,6 +45,7 @@ function Footer() {
               </li>
             </ul>
           </Col>
+          <Col md="4" />
         </Row>
       </Container>
     </footer>
