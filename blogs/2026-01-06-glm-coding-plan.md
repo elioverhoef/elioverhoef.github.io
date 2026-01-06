@@ -10,7 +10,7 @@ tags:
   - productivity
 ---
 
-![GLM-4.7 powering Claude Code](https://miro.medium.com/v2/resize:fit:1400/format:webp/glm-coding-plan-hero.png)
+![GLM-4.7 powering Claude Code](/images/glm-coding-plan-hero.png)
 
 ## The Claude Code Rate Limit Problem
 
